@@ -1,3 +1,11 @@
 <Solution>
-  <Project Path="lockatoo_V1.vbproj" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="lockatoo_V1.vbproj" Id="34edb6c6-71d5-46c4-9265-5aca99d100cc">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
 </Solution>
