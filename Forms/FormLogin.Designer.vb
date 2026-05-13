@@ -129,7 +129,6 @@ Partial Class FrmLogin
         Me.lbl3.Size = New System.Drawing.Size(123, 35)
         Me.lbl3.TabIndex = 3
         Me.lbl3.Text = "et vos "
-        AddHandler Me.lbl3.Click, AddressOf Me.Label4_Click
         '
         'lbl2
         '
@@ -201,7 +200,6 @@ Partial Class FrmLogin
         Me.lbl10.Size = New System.Drawing.Size(82, 13)
         Me.lbl10.TabIndex = 13
         Me.lbl10.Text = "Mot de passe"
-        AddHandler Me.lbl10.Click, AddressOf Me.Label13_Click
         '
         'lbl9
         '
@@ -273,7 +271,6 @@ Partial Class FrmLogin
         Me.lbl8.Size = New System.Drawing.Size(255, 13)
         Me.lbl8.TabIndex = 5
         Me.lbl8.Text = "Connectez-vous à votre espace de gestion."
-        AddHandler Me.lbl8.Click, AddressOf Me.Label7_Click
         '
         'lbl7
         '
