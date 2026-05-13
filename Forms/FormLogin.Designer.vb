@@ -22,283 +22,310 @@ Partial Class FrmLogin
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
+        Me.pnlGauche = New System.Windows.Forms.Panel()
+        Me.lbl6 = New System.Windows.Forms.Label()
+        Me.lbl4 = New System.Windows.Forms.Label()
+        Me.pnlsep = New System.Windows.Forms.Panel()
+        Me.lblsoustitre = New System.Windows.Forms.Label()
+        Me.lbl5 = New System.Windows.Forms.Label()
+        Me.lbl3 = New System.Windows.Forms.Label()
+        Me.lbl2 = New System.Windows.Forms.Label()
+        Me.lbl1 = New System.Windows.Forms.Label()
+        Me.lbltitre = New System.Windows.Forms.Label()
+        Me.pnlDroit = New System.Windows.Forms.Panel()
+        Me.lblerroemessage = New System.Windows.Forms.Label()
+        Me.lbl10 = New System.Windows.Forms.Label()
+        Me.lbl9 = New System.Windows.Forms.Label()
+        Me.lbl11 = New System.Windows.Forms.Label()
+        Me.btnSeconnecter = New System.Windows.Forms.Button()
+        Me.cboxaffichage = New System.Windows.Forms.CheckBox()
+        Me.lblpassword = New System.Windows.Forms.TextBox()
+        Me.lblmail = New System.Windows.Forms.TextBox()
+        Me.lbl8 = New System.Windows.Forms.Label()
+        Me.lbl7 = New System.Windows.Forms.Label()
+        Me.pnlGauche.SuspendLayout()
+        Me.pnlDroit.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'pnlGauche
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(414, 450)
-        Me.Panel1.TabIndex = 0
+        Me.pnlGauche.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pnlGauche.Controls.Add(Me.lbl6)
+        Me.pnlGauche.Controls.Add(Me.lbl4)
+        Me.pnlGauche.Controls.Add(Me.pnlsep)
+        Me.pnlGauche.Controls.Add(Me.lblsoustitre)
+        Me.pnlGauche.Controls.Add(Me.lbl5)
+        Me.pnlGauche.Controls.Add(Me.lbl3)
+        Me.pnlGauche.Controls.Add(Me.lbl2)
+        Me.pnlGauche.Controls.Add(Me.lbl1)
+        Me.pnlGauche.Controls.Add(Me.lbltitre)
+        Me.pnlGauche.Dock = System.Windows.Forms.DockStyle.Left
+        Me.pnlGauche.Location = New System.Drawing.Point(0, 0)
+        Me.pnlGauche.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.pnlGauche.Name = "pnlGauche"
+        Me.pnlGauche.Size = New System.Drawing.Size(414, 467)
+        Me.pnlGauche.TabIndex = 0
         '
-        'Label10
+        'lbl6
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(36, 305)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(160, 13)
-        Me.Label10.TabIndex = 8
-        Me.Label10.Text = "Simple, rapide et sécurisé."
+        Me.lbl6.AutoSize = True
+        Me.lbl6.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl6.ForeColor = System.Drawing.Color.White
+        Me.lbl6.Location = New System.Drawing.Point(36, 305)
+        Me.lbl6.Name = "lbl6"
+        Me.lbl6.Size = New System.Drawing.Size(160, 13)
+        Me.lbl6.TabIndex = 8
+        Me.lbl6.Text = "Simple, rapide et sécurisé."
         '
-        'Label9
+        'lbl4
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Gray
-        Me.Label9.Location = New System.Drawing.Point(140, 230)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(194, 35)
-        Me.Label9.TabIndex = 7
-        Me.Label9.Text = "paiements."
+        Me.lbl4.AutoSize = True
+        Me.lbl4.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl4.ForeColor = System.Drawing.Color.Gray
+        Me.lbl4.Location = New System.Drawing.Point(140, 230)
+        Me.lbl4.Name = "lbl4"
+        Me.lbl4.Size = New System.Drawing.Size(194, 35)
+        Me.lbl4.TabIndex = 7
+        Me.lbl4.Text = "paiements."
         '
-        'Panel3
+        'pnlsep
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel3.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Panel3.Location = New System.Drawing.Point(12, 97)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(395, 1)
-        Me.Panel3.TabIndex = 6
+        Me.pnlsep.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlsep.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.pnlsep.Location = New System.Drawing.Point(12, 97)
+        Me.pnlsep.Name = "pnlsep"
+        Me.pnlsep.Size = New System.Drawing.Size(395, 1)
+        Me.pnlsep.TabIndex = 6
         '
-        'Label8
+        'lblsoustitre
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(36, 71)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(142, 13)
-        Me.Label8.TabIndex = 5
-        Me.Label8.Text = "GESTION IMMOBILIÈRE"
+        Me.lblsoustitre.AutoSize = True
+        Me.lblsoustitre.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsoustitre.ForeColor = System.Drawing.Color.White
+        Me.lblsoustitre.Location = New System.Drawing.Point(36, 71)
+        Me.lblsoustitre.Name = "lblsoustitre"
+        Me.lblsoustitre.Size = New System.Drawing.Size(142, 13)
+        Me.lblsoustitre.TabIndex = 5
+        Me.lblsoustitre.Text = "GESTION IMMOBILIÈRE"
         '
-        'Label5
+        'lbl5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(36, 281)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(288, 13)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Platforme tout-en-un pour agences immobilières."
+        Me.lbl5.AutoSize = True
+        Me.lbl5.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl5.ForeColor = System.Drawing.Color.White
+        Me.lbl5.Location = New System.Drawing.Point(36, 281)
+        Me.lbl5.Name = "lbl5"
+        Me.lbl5.Size = New System.Drawing.Size(288, 13)
+        Me.lbl5.TabIndex = 4
+        Me.lbl5.Text = "Platforme tout-en-un pour agences immobilières."
         '
-        'Label4
+        'lbl3
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(33, 229)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(123, 35)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "et vos "
+        Me.lbl3.AutoSize = True
+        Me.lbl3.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl3.ForeColor = System.Drawing.Color.White
+        Me.lbl3.Location = New System.Drawing.Point(33, 229)
+        Me.lbl3.Name = "lbl3"
+        Me.lbl3.Size = New System.Drawing.Size(123, 35)
+        Me.lbl3.TabIndex = 3
+        Me.lbl3.Text = "et vos "
+        AddHandler Me.lbl3.Click, AddressOf Me.Label4_Click
         '
-        'Label3
+        'lbl2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(33, 186)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(239, 35)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "vos locataires"
+        Me.lbl2.AutoSize = True
+        Me.lbl2.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl2.ForeColor = System.Drawing.Color.White
+        Me.lbl2.Location = New System.Drawing.Point(33, 186)
+        Me.lbl2.Name = "lbl2"
+        Me.lbl2.Size = New System.Drawing.Size(239, 35)
+        Me.lbl2.TabIndex = 2
+        Me.lbl2.Text = "vos locataires"
         '
-        'Label2
+        'lbl1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(33, 137)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(301, 35)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Gérez vos biens,  "
+        Me.lbl1.AutoSize = True
+        Me.lbl1.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl1.ForeColor = System.Drawing.Color.White
+        Me.lbl1.Location = New System.Drawing.Point(33, 137)
+        Me.lbl1.Name = "lbl1"
+        Me.lbl1.Size = New System.Drawing.Size(301, 35)
+        Me.lbl1.TabIndex = 1
+        Me.lbl1.Text = "Gérez vos biens,  "
         '
-        'Label1
+        'lbltitre
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(34, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 25)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Lokatoo"
+        Me.lbltitre.AutoSize = True
+        Me.lbltitre.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltitre.ForeColor = System.Drawing.Color.White
+        Me.lbltitre.Location = New System.Drawing.Point(34, 31)
+        Me.lbltitre.Name = "lbltitre"
+        Me.lbltitre.Size = New System.Drawing.Size(105, 25)
+        Me.lbltitre.TabIndex = 0
+        Me.lbltitre.Text = "Lokatoo"
         '
-        'Panel2
+        'pnlDroit
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.CheckBox1)
-        Me.Panel2.Controls.Add(Me.TextBox2)
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(414, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(454, 450)
-        Me.Panel2.TabIndex = 1
+        Me.pnlDroit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.pnlDroit.Controls.Add(Me.lblerroemessage)
+        Me.pnlDroit.Controls.Add(Me.lbl10)
+        Me.pnlDroit.Controls.Add(Me.lbl9)
+        Me.pnlDroit.Controls.Add(Me.lbl11)
+        Me.pnlDroit.Controls.Add(Me.btnSeconnecter)
+        Me.pnlDroit.Controls.Add(Me.cboxaffichage)
+        Me.pnlDroit.Controls.Add(Me.lblpassword)
+        Me.pnlDroit.Controls.Add(Me.lblmail)
+        Me.pnlDroit.Controls.Add(Me.lbl8)
+        Me.pnlDroit.Controls.Add(Me.lbl7)
+        Me.pnlDroit.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlDroit.Location = New System.Drawing.Point(414, 0)
+        Me.pnlDroit.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.pnlDroit.Name = "pnlDroit"
+        Me.pnlDroit.Size = New System.Drawing.Size(454, 467)
+        Me.pnlDroit.TabIndex = 1
         '
-        'Label11
+        'lblerroemessage
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(137, 413)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(183, 13)
-        Me.Label11.TabIndex = 11
-        Me.Label11.Text = "©  2026 - Gestion Immobilière"
+        Me.lblerroemessage.AutoSize = True
+        Me.lblerroemessage.Location = New System.Drawing.Point(184, 195)
+        Me.lblerroemessage.Name = "lblerroemessage"
+        Me.lblerroemessage.Size = New System.Drawing.Size(0, 13)
+        Me.lblerroemessage.TabIndex = 14
         '
-        'Button2
+        'lbl10
         '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(47, 361)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(361, 23)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "Quitter"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.lbl10.AutoSize = True
+        Me.lbl10.ForeColor = System.Drawing.Color.White
+        Me.lbl10.Location = New System.Drawing.Point(47, 268)
+        Me.lbl10.Name = "lbl10"
+        Me.lbl10.Size = New System.Drawing.Size(82, 13)
+        Me.lbl10.TabIndex = 13
+        Me.lbl10.Text = "Mot de passe"
+        AddHandler Me.lbl10.Click, AddressOf Me.Label13_Click
         '
-        'Button1
+        'lbl9
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gray
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(47, 322)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(361, 23)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Se connecter"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.lbl9.AutoSize = True
+        Me.lbl9.ForeColor = System.Drawing.Color.White
+        Me.lbl9.Location = New System.Drawing.Point(47, 225)
+        Me.lbl9.Name = "lbl9"
+        Me.lbl9.Size = New System.Drawing.Size(38, 13)
+        Me.lbl9.TabIndex = 12
+        Me.lbl9.Text = "Email"
         '
-        'CheckBox1
+        'lbl11
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.ForeColor = System.Drawing.Color.White
-        Me.CheckBox1.Location = New System.Drawing.Point(47, 277)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(149, 17)
-        Me.CheckBox1.TabIndex = 8
-        Me.CheckBox1.Text = "Afficher Mot de passe"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.lbl11.AutoSize = True
+        Me.lbl11.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl11.ForeColor = System.Drawing.Color.White
+        Me.lbl11.Location = New System.Drawing.Point(137, 413)
+        Me.lbl11.Name = "lbl11"
+        Me.lbl11.Size = New System.Drawing.Size(183, 13)
+        Me.lbl11.TabIndex = 11
+        Me.lbl11.Text = "©  2026 - Gestion Immobilière"
         '
-        'TextBox2
+        'btnSeconnecter
         '
-        Me.TextBox2.Location = New System.Drawing.Point(47, 244)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(361, 21)
-        Me.TextBox2.TabIndex = 7
+        Me.btnSeconnecter.BackColor = System.Drawing.Color.Gray
+        Me.btnSeconnecter.FlatAppearance.BorderSize = 0
+        Me.btnSeconnecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSeconnecter.ForeColor = System.Drawing.Color.White
+        Me.btnSeconnecter.Location = New System.Drawing.Point(47, 353)
+        Me.btnSeconnecter.Name = "btnSeconnecter"
+        Me.btnSeconnecter.Size = New System.Drawing.Size(361, 23)
+        Me.btnSeconnecter.TabIndex = 9
+        Me.btnSeconnecter.Text = "Se connecter"
+        Me.btnSeconnecter.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'cboxaffichage
         '
-        Me.TextBox1.Location = New System.Drawing.Point(47, 201)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(361, 21)
-        Me.TextBox1.TabIndex = 6
+        Me.cboxaffichage.AutoSize = True
+        Me.cboxaffichage.ForeColor = System.Drawing.Color.White
+        Me.cboxaffichage.Location = New System.Drawing.Point(47, 317)
+        Me.cboxaffichage.Name = "cboxaffichage"
+        Me.cboxaffichage.Size = New System.Drawing.Size(149, 17)
+        Me.cboxaffichage.TabIndex = 8
+        Me.cboxaffichage.Text = "Afficher Mot de passe"
+        Me.cboxaffichage.UseVisualStyleBackColor = True
         '
-        'Label7
+        'lblpassword
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(44, 169)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(255, 13)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "Connectez-vous à votre espace de gestion."
+        Me.lblpassword.Location = New System.Drawing.Point(47, 284)
+        Me.lblpassword.Name = "lblpassword"
+        Me.lblpassword.Size = New System.Drawing.Size(361, 21)
+        Me.lblpassword.TabIndex = 7
+        Me.lblpassword.UseSystemPasswordChar = True
         '
-        'Label6
+        'lblmail
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(44, 137)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(124, 18)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "Bienvenue 👋🏾"
+        Me.lblmail.Location = New System.Drawing.Point(47, 241)
+        Me.lblmail.Name = "lblmail"
+        Me.lblmail.Size = New System.Drawing.Size(361, 21)
+        Me.lblmail.TabIndex = 6
+        '
+        'lbl8
+        '
+        Me.lbl8.AutoSize = True
+        Me.lbl8.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl8.ForeColor = System.Drawing.Color.White
+        Me.lbl8.Location = New System.Drawing.Point(44, 169)
+        Me.lbl8.Name = "lbl8"
+        Me.lbl8.Size = New System.Drawing.Size(255, 13)
+        Me.lbl8.TabIndex = 5
+        Me.lbl8.Text = "Connectez-vous à votre espace de gestion."
+        AddHandler Me.lbl8.Click, AddressOf Me.Label7_Click
+        '
+        'lbl7
+        '
+        Me.lbl7.AutoSize = True
+        Me.lbl7.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl7.ForeColor = System.Drawing.Color.White
+        Me.lbl7.Location = New System.Drawing.Point(44, 137)
+        Me.lbl7.Name = "lbl7"
+        Me.lbl7.Size = New System.Drawing.Size(124, 18)
+        Me.lbl7.TabIndex = 2
+        Me.lbl7.Text = "Bienvenue 👋🏾"
         '
         'FrmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(868, 450)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(868, 467)
+        Me.Controls.Add(Me.pnlDroit)
+        Me.Controls.Add(Me.pnlGauche)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.MaximizeBox = False
         Me.Name = "FrmLogin"
-        Me.Text = "Login"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Lokatoo - Connexion"
+        Me.pnlGauche.ResumeLayout(False)
+        Me.pnlGauche.PerformLayout()
+        Me.pnlDroit.ResumeLayout(False)
+        Me.pnlDroit.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
+    Friend WithEvents pnlGauche As Panel
+    Friend WithEvents pnlDroit As Panel
+    Friend WithEvents lbltitre As Label
+    Friend WithEvents lbl3 As Label
+    Friend WithEvents lbl2 As Label
+    Friend WithEvents lbl1 As Label
+    Friend WithEvents lbl5 As Label
+    Friend WithEvents lbl7 As Label
+    Friend WithEvents cboxaffichage As CheckBox
+    Friend WithEvents lblpassword As TextBox
+    Friend WithEvents lblmail As TextBox
+    Friend WithEvents lbl8 As Label
+    Friend WithEvents btnSeconnecter As Button
+    Friend WithEvents pnlsep As Panel
+    Friend WithEvents lblsoustitre As Label
+    Friend WithEvents lbl4 As Label
+    Friend WithEvents lbl6 As Label
+    Friend WithEvents lbl11 As Label
+    Friend WithEvents lbl9 As Label
+    Friend WithEvents lbl10 As Label
+    Friend WithEvents lblerroemessage As Label
 End Class
