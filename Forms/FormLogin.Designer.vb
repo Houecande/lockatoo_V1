@@ -33,14 +33,14 @@ Partial Class FrmLogin
         Me.lbl1 = New System.Windows.Forms.Label()
         Me.lbltitre = New System.Windows.Forms.Label()
         Me.pnlDroit = New System.Windows.Forms.Panel()
-        Me.lblerroemessage = New System.Windows.Forms.Label()
+        Me.lblErrorMessage = New System.Windows.Forms.Label()
         Me.lbl10 = New System.Windows.Forms.Label()
         Me.lbl9 = New System.Windows.Forms.Label()
         Me.lbl11 = New System.Windows.Forms.Label()
         Me.btnSeconnecter = New System.Windows.Forms.Button()
         Me.cboxaffichage = New System.Windows.Forms.CheckBox()
-        Me.lblpassword = New System.Windows.Forms.TextBox()
-        Me.lblmail = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.lbl8 = New System.Windows.Forms.Label()
         Me.lbl7 = New System.Windows.Forms.Label()
         Me.pnlGauche.SuspendLayout()
@@ -167,14 +167,14 @@ Partial Class FrmLogin
         'pnlDroit
         '
         Me.pnlDroit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.pnlDroit.Controls.Add(Me.lblerroemessage)
+        Me.pnlDroit.Controls.Add(Me.lblErrorMessage)
         Me.pnlDroit.Controls.Add(Me.lbl10)
         Me.pnlDroit.Controls.Add(Me.lbl9)
         Me.pnlDroit.Controls.Add(Me.lbl11)
         Me.pnlDroit.Controls.Add(Me.btnSeconnecter)
         Me.pnlDroit.Controls.Add(Me.cboxaffichage)
-        Me.pnlDroit.Controls.Add(Me.lblpassword)
-        Me.pnlDroit.Controls.Add(Me.lblmail)
+        Me.pnlDroit.Controls.Add(Me.txtPassword)
+        Me.pnlDroit.Controls.Add(Me.txtEmail)
         Me.pnlDroit.Controls.Add(Me.lbl8)
         Me.pnlDroit.Controls.Add(Me.lbl7)
         Me.pnlDroit.Dock = System.Windows.Forms.DockStyle.Fill
@@ -184,13 +184,13 @@ Partial Class FrmLogin
         Me.pnlDroit.Size = New System.Drawing.Size(454, 467)
         Me.pnlDroit.TabIndex = 1
         '
-        'lblerroemessage
+        'lblErrorMessage
         '
-        Me.lblerroemessage.AutoSize = True
-        Me.lblerroemessage.Location = New System.Drawing.Point(184, 195)
-        Me.lblerroemessage.Name = "lblerroemessage"
-        Me.lblerroemessage.Size = New System.Drawing.Size(0, 13)
-        Me.lblerroemessage.TabIndex = 14
+        Me.lblErrorMessage.AutoSize = True
+        Me.lblErrorMessage.Location = New System.Drawing.Point(39, 195)
+        Me.lblErrorMessage.Name = "lblErrorMessage"
+        Me.lblErrorMessage.Size = New System.Drawing.Size(0, 13)
+        Me.lblErrorMessage.TabIndex = 14
         '
         'lbl10
         '
@@ -248,20 +248,20 @@ Partial Class FrmLogin
         Me.cboxaffichage.Text = "Afficher Mot de passe"
         Me.cboxaffichage.UseVisualStyleBackColor = True
         '
-        'lblpassword
+        'txtPassword
         '
-        Me.lblpassword.Location = New System.Drawing.Point(47, 284)
-        Me.lblpassword.Name = "lblpassword"
-        Me.lblpassword.Size = New System.Drawing.Size(361, 21)
-        Me.lblpassword.TabIndex = 7
-        Me.lblpassword.UseSystemPasswordChar = True
+        Me.txtPassword.Location = New System.Drawing.Point(47, 284)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(361, 21)
+        Me.txtPassword.TabIndex = 7
+        Me.txtPassword.UseSystemPasswordChar = True
         '
-        'lblmail
+        'txtEmail
         '
-        Me.lblmail.Location = New System.Drawing.Point(47, 241)
-        Me.lblmail.Name = "lblmail"
-        Me.lblmail.Size = New System.Drawing.Size(361, 21)
-        Me.lblmail.TabIndex = 6
+        Me.txtEmail.Location = New System.Drawing.Point(47, 241)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(361, 21)
+        Me.txtEmail.TabIndex = 6
         '
         'lbl8
         '
@@ -316,8 +316,8 @@ Partial Class FrmLogin
     Friend WithEvents lbl5 As Label
     Friend WithEvents lbl7 As Label
     Friend WithEvents cboxaffichage As CheckBox
-    Friend WithEvents lblpassword As TextBox
-    Friend WithEvents lblmail As TextBox
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents lbl8 As Label
     Friend WithEvents btnSeconnecter As Button
     Friend WithEvents pnlsep As Panel
@@ -327,5 +327,5 @@ Partial Class FrmLogin
     Friend WithEvents lbl11 As Label
     Friend WithEvents lbl9 As Label
     Friend WithEvents lbl10 As Label
-    Friend WithEvents lblerroemessage As Label
+    Friend WithEvents lblErrorMessage As Label
 End Class
