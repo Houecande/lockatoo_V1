@@ -225,7 +225,7 @@ Partial Class FrmLogin
         '
         'btnSeconnecter
         '
-        Me.btnSeconnecter.BackColor = System.Drawing.Color.Gray
+        Me.btnSeconnecter.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.btnSeconnecter.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSeconnecter.FlatAppearance.BorderSize = 0
         Me.btnSeconnecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
