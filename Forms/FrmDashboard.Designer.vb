@@ -59,6 +59,11 @@ Partial Class FrmDashboard
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.pnltitre.SuspendLayout()
@@ -86,11 +91,16 @@ Partial Class FrmDashboard
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(191, 608)
+        Me.Panel1.Size = New System.Drawing.Size(191, 668)
         Me.Panel1.TabIndex = 0
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.Button11)
+        Me.Panel4.Controls.Add(Me.Button10)
+        Me.Panel4.Controls.Add(Me.Button9)
+        Me.Panel4.Controls.Add(Me.Button8)
+        Me.Panel4.Controls.Add(Me.Button7)
         Me.Panel4.Controls.Add(Me.Panel10)
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.Panel9)
@@ -103,9 +113,9 @@ Partial Class FrmDashboard
         Me.Panel4.Controls.Add(Me.Button1)
         Me.Panel4.Controls.Add(Me.btnDashboard)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(0, 69)
+        Me.Panel4.Location = New System.Drawing.Point(0, 63)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(191, 539)
+        Me.Panel4.Size = New System.Drawing.Size(191, 605)
         Me.Panel4.TabIndex = 3
         '
         'Button6
@@ -116,7 +126,7 @@ Partial Class FrmDashboard
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(0, 501)
+        Me.Button6.Location = New System.Drawing.Point(0, 567)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(191, 38)
         Me.Button6.TabIndex = 7
@@ -191,7 +201,7 @@ Partial Class FrmDashboard
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(0, 94)
+        Me.Button1.Location = New System.Drawing.Point(0, 97)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(191, 38)
         Me.Button1.TabIndex = 2
@@ -220,7 +230,7 @@ Partial Class FrmDashboard
         Me.pnltitre.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnltitre.Location = New System.Drawing.Point(0, 0)
         Me.pnltitre.Name = "pnltitre"
-        Me.pnltitre.Size = New System.Drawing.Size(191, 69)
+        Me.pnltitre.Size = New System.Drawing.Size(191, 63)
         Me.pnltitre.TabIndex = 2
         '
         'lbltitre
@@ -247,7 +257,7 @@ Partial Class FrmDashboard
         Me.Panel2.Location = New System.Drawing.Point(191, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(864, 608)
+        Me.Panel2.Size = New System.Drawing.Size(864, 668)
         Me.Panel2.TabIndex = 1
         '
         'Panel3
@@ -258,7 +268,7 @@ Partial Class FrmDashboard
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(864, 69)
+        Me.Panel3.Size = New System.Drawing.Size(864, 63)
         Me.Panel3.TabIndex = 0
         '
         'lbl1
@@ -431,7 +441,7 @@ Partial Class FrmDashboard
         Me.Panel11.Controls.Add(Me.Panel13)
         Me.Panel11.Controls.Add(Me.Panel12)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel11.Location = New System.Drawing.Point(0, 313)
+        Me.Panel11.Location = New System.Drawing.Point(0, 373)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(864, 295)
         Me.Panel11.TabIndex = 4
@@ -495,18 +505,92 @@ Partial Class FrmDashboard
         Me.DataGridView2.Size = New System.Drawing.Size(347, 249)
         Me.DataGridView2.TabIndex = 4
         '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.ForeColor = System.Drawing.Color.White
+        Me.Button7.Location = New System.Drawing.Point(0, 303)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(191, 38)
+        Me.Button7.TabIndex = 11
+        Me.Button7.Text = "Bailleurs"
+        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.ForeColor = System.Drawing.Color.White
+        Me.Button8.Location = New System.Drawing.Point(0, 347)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(191, 38)
+        Me.Button8.TabIndex = 12
+        Me.Button8.Text = "Décaissements"
+        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.ForeColor = System.Drawing.Color.White
+        Me.Button9.Location = New System.Drawing.Point(-3, 391)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(191, 38)
+        Me.Button9.TabIndex = 13
+        Me.Button9.Text = "États des lieux"
+        Me.Button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.ForeColor = System.Drawing.Color.White
+        Me.Button10.Location = New System.Drawing.Point(0, 435)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(191, 38)
+        Me.Button10.TabIndex = 14
+        Me.Button10.Text = "Résiliations"
+        Me.Button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.ForeColor = System.Drawing.Color.White
+        Me.Button11.Location = New System.Drawing.Point(0, 479)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(191, 38)
+        Me.Button11.TabIndex = 15
+        Me.Button11.Text = "Personnel"
+        Me.Button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button11.UseVisualStyleBackColor = False
+        '
         'FrmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1055, 608)
+        Me.ClientSize = New System.Drawing.Size(1055, 668)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(1071, 647)
         Me.MinimumSize = New System.Drawing.Size(1071, 647)
         Me.Name = "FrmDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -575,4 +659,9 @@ Partial Class FrmDashboard
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Label6 As Label
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button11 As Button
 End Class
