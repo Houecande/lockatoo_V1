@@ -82,7 +82,7 @@ Partial Class FrmLogin
         Me.lbl4.AutoSize = True
         Me.lbl4.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl4.ForeColor = System.Drawing.Color.Gray
-        Me.lbl4.Location = New System.Drawing.Point(140, 230)
+        Me.lbl4.Location = New System.Drawing.Point(140, 229)
         Me.lbl4.Name = "lbl4"
         Me.lbl4.Size = New System.Drawing.Size(194, 35)
         Me.lbl4.TabIndex = 7
