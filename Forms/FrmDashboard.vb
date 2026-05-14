@@ -4,7 +4,7 @@ Imports Newtonsoft.Json.Linq
 
 Public Class FrmDashboard
 
-    ' Couleurs thème (Style GitHub Dark) 
+    ' Couleurs thème 
     Private ReadOnly C_ACCENT As Color = Color.FromArgb(46, 160, 67)
     Private ReadOnly C_BG_BTN As Color = Color.FromArgb(22, 27, 34)
     Private ReadOnly C_HOVER As Color = Color.FromArgb(48, 54, 61)
@@ -139,7 +139,7 @@ Public Class FrmDashboard
             Decimal.TryParse(data("total_paiements_mois")?.ToString(), montant)
             lblstat4.Text = $"{FormatNumber(montant, 0)} FCFA"
 
-            ' Invalidate est plus fluide que Refresh pour éviter le flickering
+            ' Invalidate est plus fluide que Refresh pour éviter le flickering(scintillement ou papillotement)
             pnlstat1.Invalidate()
         Catch
         End Try
