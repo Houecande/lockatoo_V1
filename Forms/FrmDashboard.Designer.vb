@@ -22,11 +22,11 @@ Partial Class FrmDashboard
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btnDeconnexion = New System.Windows.Forms.Button()
@@ -426,9 +426,9 @@ Partial Class FrmDashboard
         Me.lbl3.ForeColor = System.Drawing.Color.White
         Me.lbl3.Location = New System.Drawing.Point(55, 107)
         Me.lbl3.Name = "lbl3"
-        Me.lbl3.Size = New System.Drawing.Size(231, 13)
+        Me.lbl3.Size = New System.Drawing.Size(167, 13)
         Me.lbl3.TabIndex = 2
-        Me.lbl3.Text = "Voici le résumé de l'agence aujourd'hui"
+        Me.lbl3.Text = "Voici le résumé de l'agence."
         '
         'FlowLayoutPanel2
         '
@@ -511,8 +511,8 @@ Partial Class FrmDashboard
         'dgvStat1
         '
         Me.dgvStat1.AllowUserToAddRows = False
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dgvStat1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgvStat1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvStat1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvStat1.BackgroundColor = System.Drawing.Color.Gray
         Me.dgvStat1.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -522,16 +522,16 @@ Partial Class FrmDashboard
         Me.dgvStat1.Location = New System.Drawing.Point(5, 28)
         Me.dgvStat1.Name = "dgvStat1"
         Me.dgvStat1.ReadOnly = True
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvStat1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Azure
-        Me.dgvStat1.RowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvStat1.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.Azure
+        Me.dgvStat1.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.dgvStat1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvStat1.Size = New System.Drawing.Size(347, 249)
         Me.dgvStat1.TabIndex = 3
@@ -550,8 +550,8 @@ Partial Class FrmDashboard
         'dgvStat2
         '
         Me.dgvStat2.AllowUserToAddRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dgvStat2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgvStat2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvStat2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvStat2.BackgroundColor = System.Drawing.Color.Gray
         Me.dgvStat2.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -561,8 +561,8 @@ Partial Class FrmDashboard
         Me.dgvStat2.Location = New System.Drawing.Point(5, 28)
         Me.dgvStat2.Name = "dgvStat2"
         Me.dgvStat2.ReadOnly = True
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Azure
-        Me.dgvStat2.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.Azure
+        Me.dgvStat2.RowsDefaultCellStyle = DataGridViewCellStyle10
         Me.dgvStat2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvStat2.Size = New System.Drawing.Size(351, 249)
         Me.dgvStat2.TabIndex = 4
