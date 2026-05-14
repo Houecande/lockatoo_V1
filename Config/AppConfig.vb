@@ -1,7 +1,6 @@
-﻿' ============================================================
+﻿
 '  Config/AppConfig.vb
 '  Configuration globale — .NET Framework 4.x
-' ============================================================
 Public Module AppConfig
 
     ' URL de base de l'API PHP (WAMP local)

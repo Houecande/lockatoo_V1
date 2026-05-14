@@ -1,8 +1,7 @@
-﻿' ============================================================
+﻿
 '  Services/ApiService.vb
 '  Appels HTTP vers l'API PHP — .NET Framework 4.x
 '  NuGet requis : Newtonsoft.Json
-' ============================================================
 Imports System.Net
 Imports System.IO
 Imports System.Text
@@ -11,12 +10,12 @@ Imports Newtonsoft.Json.Linq
 
 Public Module ApiService
 
-    ' ── Construire URL complète ─────────────────────────────
+    ' Construire URL complète
     Private Function Url(endpoint As String) As String
         Return AppConfig.API_BASE_URL & "/" & endpoint
     End Function
 
-    ' ── Requête HTTP générique ──────────────────────────────
+    ' Requête HTTP générique
     Private Function Requete(methode As String, endpoint As String,
                               Optional data As Object = Nothing) As JObject
         Try
@@ -66,14 +65,12 @@ Public Module ApiService
         End Try
     End Function
 
-    ' ── Réponse d'erreur standard ───────────────────────────
+    '  Réponse d'erreur standard 
     Private Function ErreurJson(message As String) As JObject
         Return JObject.Parse("{""success"":false,""message"":""" & message & """,""data"":null}")
     End Function
 
-    ' ============================================================
     '  ENDPOINTS
-    ' ============================================================
 
     ' AUTH
     Public Function Login(email As String, motDePasse As String) As JObject
