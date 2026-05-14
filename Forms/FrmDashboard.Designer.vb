@@ -30,23 +30,24 @@ Partial Class FrmDashboard
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmDashboard))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.pnlbtn = New System.Windows.Forms.Panel()
         Me.btnPersonnel = New System.Windows.Forms.Button()
         Me.btnResiliation = New System.Windows.Forms.Button()
         Me.btnEtatdesLieux = New System.Windows.Forms.Button()
         Me.btnDécaissements = New System.Windows.Forms.Button()
         Me.btnBailleurs = New System.Windows.Forms.Button()
+        Me.btnDeconnexion = New System.Windows.Forms.Button()
+        Me.btnNotification = New System.Windows.Forms.Button()
+        Me.btnPaiements = New System.Windows.Forms.Button()
+        Me.btnContrats = New System.Windows.Forms.Button()
+        Me.btnLocataires = New System.Windows.Forms.Button()
+        Me.btnBien = New System.Windows.Forms.Button()
+        Me.btnDashboard = New System.Windows.Forms.Button()
         Me.pnlinfo = New System.Windows.Forms.Panel()
         Me.lblinfodimunitif = New System.Windows.Forms.Label()
         Me.lblinfopconnect = New System.Windows.Forms.Label()
         Me.lblsep2 = New System.Windows.Forms.Panel()
         Me.pnlsep1 = New System.Windows.Forms.Panel()
-        Me.btnDeconnexion = New System.Windows.Forms.Button()
-        Me.btnNotification = New System.Windows.Forms.Button()
-        Me.btnPaiements = New System.Windows.Forms.Button()
-        Me.btnContrats = New System.Windows.Forms.Button()
-        Me.btnLacataires = New System.Windows.Forms.Button()
-        Me.btnBien = New System.Windows.Forms.Button()
-        Me.btnDashboard = New System.Windows.Forms.Button()
         Me.pnltitre = New System.Windows.Forms.Panel()
         Me.lbltitre = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -89,6 +90,7 @@ Partial Class FrmDashboard
         Me.lbl1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.pnlbtn.SuspendLayout()
         Me.pnlinfo.SuspendLayout()
         Me.pnltitre.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -119,39 +121,48 @@ Partial Class FrmDashboard
         '
         'Panel4
         '
-        Me.Panel4.Controls.Add(Me.btnPersonnel)
-        Me.Panel4.Controls.Add(Me.btnResiliation)
-        Me.Panel4.Controls.Add(Me.btnEtatdesLieux)
-        Me.Panel4.Controls.Add(Me.btnDécaissements)
-        Me.Panel4.Controls.Add(Me.btnBailleurs)
+        Me.Panel4.Controls.Add(Me.pnlbtn)
         Me.Panel4.Controls.Add(Me.pnlinfo)
         Me.Panel4.Controls.Add(Me.lblinfopconnect)
         Me.Panel4.Controls.Add(Me.lblsep2)
         Me.Panel4.Controls.Add(Me.pnlsep1)
-        Me.Panel4.Controls.Add(Me.btnDeconnexion)
-        Me.Panel4.Controls.Add(Me.btnNotification)
-        Me.Panel4.Controls.Add(Me.btnPaiements)
-        Me.Panel4.Controls.Add(Me.btnContrats)
-        Me.Panel4.Controls.Add(Me.btnLacataires)
-        Me.Panel4.Controls.Add(Me.btnBien)
-        Me.Panel4.Controls.Add(Me.btnDashboard)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 63)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(191, 605)
         Me.Panel4.TabIndex = 3
         '
+        'pnlbtn
+        '
+        Me.pnlbtn.Controls.Add(Me.btnPersonnel)
+        Me.pnlbtn.Controls.Add(Me.btnResiliation)
+        Me.pnlbtn.Controls.Add(Me.btnEtatdesLieux)
+        Me.pnlbtn.Controls.Add(Me.btnDécaissements)
+        Me.pnlbtn.Controls.Add(Me.btnBailleurs)
+        Me.pnlbtn.Controls.Add(Me.btnDeconnexion)
+        Me.pnlbtn.Controls.Add(Me.btnNotification)
+        Me.pnlbtn.Controls.Add(Me.btnPaiements)
+        Me.pnlbtn.Controls.Add(Me.btnContrats)
+        Me.pnlbtn.Controls.Add(Me.btnLocataires)
+        Me.pnlbtn.Controls.Add(Me.btnBien)
+        Me.pnlbtn.Controls.Add(Me.btnDashboard)
+        Me.pnlbtn.Location = New System.Drawing.Point(0, 52)
+        Me.pnlbtn.Name = "pnlbtn"
+        Me.pnlbtn.Size = New System.Drawing.Size(191, 553)
+        Me.pnlbtn.TabIndex = 11
+        '
         'btnPersonnel
         '
         Me.btnPersonnel.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnPersonnel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPersonnel.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnPersonnel.FlatAppearance.BorderSize = 0
         Me.btnPersonnel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPersonnel.ForeColor = System.Drawing.Color.White
-        Me.btnPersonnel.Location = New System.Drawing.Point(0, 479)
+        Me.btnPersonnel.Location = New System.Drawing.Point(0, 380)
         Me.btnPersonnel.Name = "btnPersonnel"
         Me.btnPersonnel.Size = New System.Drawing.Size(191, 38)
-        Me.btnPersonnel.TabIndex = 15
+        Me.btnPersonnel.TabIndex = 26
         Me.btnPersonnel.Text = "Personnel"
         Me.btnPersonnel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnPersonnel.UseVisualStyleBackColor = False
@@ -160,13 +171,14 @@ Partial Class FrmDashboard
         '
         Me.btnResiliation.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnResiliation.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnResiliation.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnResiliation.FlatAppearance.BorderSize = 0
         Me.btnResiliation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnResiliation.ForeColor = System.Drawing.Color.White
-        Me.btnResiliation.Location = New System.Drawing.Point(0, 435)
+        Me.btnResiliation.Location = New System.Drawing.Point(0, 342)
         Me.btnResiliation.Name = "btnResiliation"
         Me.btnResiliation.Size = New System.Drawing.Size(191, 38)
-        Me.btnResiliation.TabIndex = 14
+        Me.btnResiliation.TabIndex = 25
         Me.btnResiliation.Text = "Résiliations"
         Me.btnResiliation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnResiliation.UseVisualStyleBackColor = False
@@ -175,13 +187,14 @@ Partial Class FrmDashboard
         '
         Me.btnEtatdesLieux.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnEtatdesLieux.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEtatdesLieux.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnEtatdesLieux.FlatAppearance.BorderSize = 0
         Me.btnEtatdesLieux.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEtatdesLieux.ForeColor = System.Drawing.Color.White
-        Me.btnEtatdesLieux.Location = New System.Drawing.Point(-3, 391)
+        Me.btnEtatdesLieux.Location = New System.Drawing.Point(0, 304)
         Me.btnEtatdesLieux.Name = "btnEtatdesLieux"
         Me.btnEtatdesLieux.Size = New System.Drawing.Size(191, 38)
-        Me.btnEtatdesLieux.TabIndex = 13
+        Me.btnEtatdesLieux.TabIndex = 24
         Me.btnEtatdesLieux.Text = "États des lieux"
         Me.btnEtatdesLieux.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEtatdesLieux.UseVisualStyleBackColor = False
@@ -190,13 +203,14 @@ Partial Class FrmDashboard
         '
         Me.btnDécaissements.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnDécaissements.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDécaissements.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnDécaissements.FlatAppearance.BorderSize = 0
         Me.btnDécaissements.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDécaissements.ForeColor = System.Drawing.Color.White
-        Me.btnDécaissements.Location = New System.Drawing.Point(0, 347)
+        Me.btnDécaissements.Location = New System.Drawing.Point(0, 266)
         Me.btnDécaissements.Name = "btnDécaissements"
         Me.btnDécaissements.Size = New System.Drawing.Size(191, 38)
-        Me.btnDécaissements.TabIndex = 12
+        Me.btnDécaissements.TabIndex = 23
         Me.btnDécaissements.Text = "Décaissements"
         Me.btnDécaissements.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDécaissements.UseVisualStyleBackColor = False
@@ -205,16 +219,129 @@ Partial Class FrmDashboard
         '
         Me.btnBailleurs.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.btnBailleurs.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBailleurs.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnBailleurs.FlatAppearance.BorderSize = 0
         Me.btnBailleurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBailleurs.ForeColor = System.Drawing.Color.White
-        Me.btnBailleurs.Location = New System.Drawing.Point(0, 303)
+        Me.btnBailleurs.Location = New System.Drawing.Point(0, 228)
         Me.btnBailleurs.Name = "btnBailleurs"
         Me.btnBailleurs.Size = New System.Drawing.Size(191, 38)
-        Me.btnBailleurs.TabIndex = 11
+        Me.btnBailleurs.TabIndex = 22
         Me.btnBailleurs.Text = "Bailleurs"
         Me.btnBailleurs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBailleurs.UseVisualStyleBackColor = False
+        '
+        'btnDeconnexion
+        '
+        Me.btnDeconnexion.BackColor = System.Drawing.Color.Red
+        Me.btnDeconnexion.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDeconnexion.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnDeconnexion.FlatAppearance.BorderSize = 0
+        Me.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDeconnexion.ForeColor = System.Drawing.Color.White
+        Me.btnDeconnexion.Location = New System.Drawing.Point(0, 515)
+        Me.btnDeconnexion.Name = "btnDeconnexion"
+        Me.btnDeconnexion.Size = New System.Drawing.Size(191, 38)
+        Me.btnDeconnexion.TabIndex = 7
+        Me.btnDeconnexion.Text = "Deconnexion ↪"
+        Me.btnDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDeconnexion.UseVisualStyleBackColor = False
+        '
+        'btnNotification
+        '
+        Me.btnNotification.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnNotification.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNotification.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnNotification.FlatAppearance.BorderSize = 0
+        Me.btnNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNotification.ForeColor = System.Drawing.Color.White
+        Me.btnNotification.Location = New System.Drawing.Point(0, 190)
+        Me.btnNotification.Name = "btnNotification"
+        Me.btnNotification.Size = New System.Drawing.Size(191, 38)
+        Me.btnNotification.TabIndex = 21
+        Me.btnNotification.Text = "Notification"
+        Me.btnNotification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnNotification.UseVisualStyleBackColor = False
+        '
+        'btnPaiements
+        '
+        Me.btnPaiements.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnPaiements.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPaiements.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnPaiements.FlatAppearance.BorderSize = 0
+        Me.btnPaiements.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPaiements.ForeColor = System.Drawing.Color.White
+        Me.btnPaiements.Location = New System.Drawing.Point(0, 152)
+        Me.btnPaiements.Name = "btnPaiements"
+        Me.btnPaiements.Size = New System.Drawing.Size(191, 38)
+        Me.btnPaiements.TabIndex = 20
+        Me.btnPaiements.Text = "Paiements"
+        Me.btnPaiements.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPaiements.UseVisualStyleBackColor = False
+        '
+        'btnContrats
+        '
+        Me.btnContrats.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnContrats.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnContrats.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnContrats.FlatAppearance.BorderSize = 0
+        Me.btnContrats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnContrats.ForeColor = System.Drawing.Color.White
+        Me.btnContrats.Location = New System.Drawing.Point(0, 114)
+        Me.btnContrats.Name = "btnContrats"
+        Me.btnContrats.Size = New System.Drawing.Size(191, 38)
+        Me.btnContrats.TabIndex = 19
+        Me.btnContrats.Text = "Contrats"
+        Me.btnContrats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnContrats.UseVisualStyleBackColor = False
+        '
+        'btnLocataires
+        '
+        Me.btnLocataires.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnLocataires.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLocataires.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnLocataires.FlatAppearance.BorderSize = 0
+        Me.btnLocataires.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLocataires.ForeColor = System.Drawing.Color.White
+        Me.btnLocataires.Location = New System.Drawing.Point(0, 76)
+        Me.btnLocataires.Name = "btnLocataires"
+        Me.btnLocataires.Size = New System.Drawing.Size(191, 38)
+        Me.btnLocataires.TabIndex = 18
+        Me.btnLocataires.Text = "Locataires"
+        Me.btnLocataires.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLocataires.UseVisualStyleBackColor = False
+        '
+        'btnBien
+        '
+        Me.btnBien.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnBien.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBien.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnBien.FlatAppearance.BorderSize = 0
+        Me.btnBien.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBien.ForeColor = System.Drawing.Color.White
+        Me.btnBien.Location = New System.Drawing.Point(0, 38)
+        Me.btnBien.Name = "btnBien"
+        Me.btnBien.Size = New System.Drawing.Size(191, 38)
+        Me.btnBien.TabIndex = 17
+        Me.btnBien.Text = "Bien"
+        Me.btnBien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBien.UseVisualStyleBackColor = False
+        '
+        'btnDashboard
+        '
+        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnDashboard.FlatAppearance.BorderSize = 0
+        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDashboard.ForeColor = System.Drawing.Color.White
+        Me.btnDashboard.Location = New System.Drawing.Point(0, 0)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.Size = New System.Drawing.Size(191, 38)
+        Me.btnDashboard.TabIndex = 16
+        Me.btnDashboard.Text = "Tableau de bord"
+        Me.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDashboard.UseVisualStyleBackColor = False
         '
         'pnlinfo
         '
@@ -242,9 +369,8 @@ Partial Class FrmDashboard
         Me.lblinfopconnect.ForeColor = System.Drawing.Color.White
         Me.lblinfopconnect.Location = New System.Drawing.Point(51, 17)
         Me.lblinfopconnect.Name = "lblinfopconnect"
-        Me.lblinfopconnect.Size = New System.Drawing.Size(109, 13)
+        Me.lblinfopconnect.Size = New System.Drawing.Size(0, 13)
         Me.lblinfopconnect.TabIndex = 10
-        Me.lblinfopconnect.Text = "Directeur Général"
         '
         'lblsep2
         '
@@ -264,112 +390,6 @@ Partial Class FrmDashboard
         Me.pnlsep1.Name = "pnlsep1"
         Me.pnlsep1.Size = New System.Drawing.Size(191, 1)
         Me.pnlsep1.TabIndex = 7
-        '
-        'btnDeconnexion
-        '
-        Me.btnDeconnexion.BackColor = System.Drawing.Color.Red
-        Me.btnDeconnexion.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDeconnexion.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnDeconnexion.FlatAppearance.BorderSize = 0
-        Me.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDeconnexion.ForeColor = System.Drawing.Color.White
-        Me.btnDeconnexion.Location = New System.Drawing.Point(0, 567)
-        Me.btnDeconnexion.Name = "btnDeconnexion"
-        Me.btnDeconnexion.Size = New System.Drawing.Size(191, 38)
-        Me.btnDeconnexion.TabIndex = 7
-        Me.btnDeconnexion.Text = "Deconnexion ↪"
-        Me.btnDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDeconnexion.UseVisualStyleBackColor = False
-        '
-        'btnNotification
-        '
-        Me.btnNotification.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnNotification.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnNotification.FlatAppearance.BorderSize = 0
-        Me.btnNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNotification.ForeColor = System.Drawing.Color.White
-        Me.btnNotification.Location = New System.Drawing.Point(1, 259)
-        Me.btnNotification.Name = "btnNotification"
-        Me.btnNotification.Size = New System.Drawing.Size(191, 38)
-        Me.btnNotification.TabIndex = 6
-        Me.btnNotification.Text = "Notification"
-        Me.btnNotification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnNotification.UseVisualStyleBackColor = False
-        '
-        'btnPaiements
-        '
-        Me.btnPaiements.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnPaiements.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPaiements.FlatAppearance.BorderSize = 0
-        Me.btnPaiements.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPaiements.ForeColor = System.Drawing.Color.White
-        Me.btnPaiements.Location = New System.Drawing.Point(0, 217)
-        Me.btnPaiements.Name = "btnPaiements"
-        Me.btnPaiements.Size = New System.Drawing.Size(191, 38)
-        Me.btnPaiements.TabIndex = 5
-        Me.btnPaiements.Text = "Paiements"
-        Me.btnPaiements.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPaiements.UseVisualStyleBackColor = False
-        '
-        'btnContrats
-        '
-        Me.btnContrats.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnContrats.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnContrats.FlatAppearance.BorderSize = 0
-        Me.btnContrats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnContrats.ForeColor = System.Drawing.Color.White
-        Me.btnContrats.Location = New System.Drawing.Point(-1, 176)
-        Me.btnContrats.Name = "btnContrats"
-        Me.btnContrats.Size = New System.Drawing.Size(191, 38)
-        Me.btnContrats.TabIndex = 4
-        Me.btnContrats.Text = "Contrats"
-        Me.btnContrats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnContrats.UseVisualStyleBackColor = False
-        '
-        'btnLacataires
-        '
-        Me.btnLacataires.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnLacataires.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLacataires.FlatAppearance.BorderSize = 0
-        Me.btnLacataires.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLacataires.ForeColor = System.Drawing.Color.White
-        Me.btnLacataires.Location = New System.Drawing.Point(0, 135)
-        Me.btnLacataires.Name = "btnLacataires"
-        Me.btnLacataires.Size = New System.Drawing.Size(191, 38)
-        Me.btnLacataires.TabIndex = 3
-        Me.btnLacataires.Text = "Locataires"
-        Me.btnLacataires.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLacataires.UseVisualStyleBackColor = False
-        '
-        'btnBien
-        '
-        Me.btnBien.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnBien.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBien.FlatAppearance.BorderSize = 0
-        Me.btnBien.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBien.ForeColor = System.Drawing.Color.White
-        Me.btnBien.Location = New System.Drawing.Point(0, 97)
-        Me.btnBien.Name = "btnBien"
-        Me.btnBien.Size = New System.Drawing.Size(191, 38)
-        Me.btnBien.TabIndex = 2
-        Me.btnBien.Text = "Bien"
-        Me.btnBien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBien.UseVisualStyleBackColor = False
-        '
-        'btnDashboard
-        '
-        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDashboard.FlatAppearance.BorderSize = 0
-        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDashboard.ForeColor = System.Drawing.Color.White
-        Me.btnDashboard.Location = New System.Drawing.Point(0, 53)
-        Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.Size = New System.Drawing.Size(191, 38)
-        Me.btnDashboard.TabIndex = 1
-        Me.btnDashboard.Text = "Tableau de bord"
-        Me.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashboard.UseVisualStyleBackColor = False
         '
         'pnltitre
         '
@@ -801,6 +821,7 @@ Partial Class FrmDashboard
         Me.Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.pnlbtn.ResumeLayout(False)
         Me.pnlinfo.ResumeLayout(False)
         Me.pnlinfo.PerformLayout()
         Me.pnltitre.ResumeLayout(False)
@@ -834,15 +855,9 @@ Partial Class FrmDashboard
     Friend WithEvents lbltitre As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents lbl1 As Label
-    Friend WithEvents btnDashboard As Button
     Friend WithEvents pnltitre As Panel
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents btnPaiements As Button
-    Friend WithEvents btnContrats As Button
-    Friend WithEvents btnLacataires As Button
-    Friend WithEvents btnBien As Button
     Friend WithEvents btnDeconnexion As Button
-    Friend WithEvents btnNotification As Button
     Friend WithEvents pnlstat As Panel
     Friend WithEvents pnlstat3 As Panel
     Friend WithEvents pnlstat2 As Panel
@@ -866,11 +881,6 @@ Partial Class FrmDashboard
     Friend WithEvents dgvStat1 As DataGridView
     Friend WithEvents dgvStat2 As DataGridView
     Friend WithEvents lbl9 As Label
-    Friend WithEvents btnResiliation As Button
-    Friend WithEvents btnEtatdesLieux As Button
-    Friend WithEvents btnDécaissements As Button
-    Friend WithEvents btnBailleurs As Button
-    Friend WithEvents btnPersonnel As Button
     Friend WithEvents clLocataire As DataGridViewTextBoxColumn
     Friend WithEvents clMontant As DataGridViewTextBoxColumn
     Friend WithEvents clMode As DataGridViewTextBoxColumn
@@ -888,4 +898,16 @@ Partial Class FrmDashboard
     Friend WithEvents lblstat2 As Label
     Friend WithEvents lblstat4 As Label
     Friend WithEvents lblstat3 As Label
+    Friend WithEvents pnlbtn As Panel
+    Friend WithEvents btnPersonnel As Button
+    Friend WithEvents btnResiliation As Button
+    Friend WithEvents btnEtatdesLieux As Button
+    Friend WithEvents btnDécaissements As Button
+    Friend WithEvents btnBailleurs As Button
+    Friend WithEvents btnNotification As Button
+    Friend WithEvents btnPaiements As Button
+    Friend WithEvents btnContrats As Button
+    Friend WithEvents btnLocataires As Button
+    Friend WithEvents btnBien As Button
+    Friend WithEvents btnDashboard As Button
 End Class

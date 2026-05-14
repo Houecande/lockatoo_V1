@@ -104,6 +104,9 @@ Public Class FrmLogin
         End If
         txtPassword.Focus()
     End Sub
+    Private Sub FormLogin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Application.Exit()
+    End Sub
 
 
 End Class
