@@ -19,15 +19,15 @@
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lbl2.Click
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblinfodimunitif.Click
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnPaiements.Click
 
     End Sub
 
@@ -35,11 +35,15 @@
 
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles lbl8.Click
 
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles btnNotification.Click
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvStat1.CellContentClick
 
     End Sub
 End Class

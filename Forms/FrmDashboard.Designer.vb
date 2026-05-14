@@ -22,14 +22,19 @@ Partial Class FrmDashboard
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnDeconnexion = New System.Windows.Forms.Button()
+        Me.btnNotification = New System.Windows.Forms.Button()
+        Me.btnPaiements = New System.Windows.Forms.Button()
+        Me.btnContrats = New System.Windows.Forms.Button()
+        Me.btnLacataires = New System.Windows.Forms.Button()
+        Me.btnBien = New System.Windows.Forms.Button()
         Me.btnDashboard = New System.Windows.Forms.Button()
         Me.pnltitre = New System.Windows.Forms.Panel()
         Me.lbltitre = New System.Windows.Forms.Label()
@@ -37,49 +42,66 @@ Partial Class FrmDashboard
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lbl1 = New System.Windows.Forms.Label()
         Me.pnlstat = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.pnlsep = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.pnlstat1 = New System.Windows.Forms.Panel()
+        Me.pnlstat2 = New System.Windows.Forms.Panel()
+        Me.pnlstat3 = New System.Windows.Forms.Panel()
+        Me.pnlstat4 = New System.Windows.Forms.Panel()
+        Me.pnlsep1 = New System.Windows.Forms.Panel()
+        Me.lblsep2 = New System.Windows.Forms.Panel()
+        Me.pnlinfo = New System.Windows.Forms.Panel()
+        Me.lblinfodimunitif = New System.Windows.Forms.Label()
+        Me.lblinfopconnect = New System.Windows.Forms.Label()
+        Me.lbl2 = New System.Windows.Forms.Label()
+        Me.lbl3 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.FlowLayoutPanel3 = New System.Windows.Forms.FlowLayoutPanel()
         Me.FlowLayoutPanel4 = New System.Windows.Forms.FlowLayoutPanel()
         Me.FlowLayoutPanel5 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.pnlgrille = New System.Windows.Forms.Panel()
+        Me.pnlinfog1 = New System.Windows.Forms.Panel()
+        Me.pnlinfog2 = New System.Windows.Forms.Panel()
+        Me.lbl8 = New System.Windows.Forms.Label()
+        Me.dgvStat1 = New System.Windows.Forms.DataGridView()
+        Me.lbl9 = New System.Windows.Forms.Label()
+        Me.dgvStat2 = New System.Windows.Forms.DataGridView()
+        Me.btnBailleurs = New System.Windows.Forms.Button()
+        Me.btnDécaissements = New System.Windows.Forms.Button()
+        Me.btnEtatdesLieux = New System.Windows.Forms.Button()
+        Me.btnResiliation = New System.Windows.Forms.Button()
+        Me.btnPersonnel = New System.Windows.Forms.Button()
+        Me.clLocataire = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clMontant = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clMode = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clStatut = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clAdresse = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clLoyer = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.clQuartier = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lbl4 = New System.Windows.Forms.Label()
+        Me.lbl5 = New System.Windows.Forms.Label()
+        Me.lbl6 = New System.Windows.Forms.Label()
+        Me.lbl7 = New System.Windows.Forms.Label()
+        Me.lblstat1 = New System.Windows.Forms.Label()
+        Me.lblstat2 = New System.Windows.Forms.Label()
+        Me.lblstat3 = New System.Windows.Forms.Label()
+        Me.lblstat4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.pnltitre.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.pnlstat.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.Panel10.SuspendLayout()
-        Me.Panel11.SuspendLayout()
-        Me.Panel12.SuspendLayout()
-        Me.Panel13.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlstat1.SuspendLayout()
+        Me.pnlstat2.SuspendLayout()
+        Me.pnlstat3.SuspendLayout()
+        Me.pnlstat4.SuspendLayout()
+        Me.pnlinfo.SuspendLayout()
+        Me.pnlgrille.SuspendLayout()
+        Me.pnlinfog1.SuspendLayout()
+        Me.pnlinfog2.SuspendLayout()
+        CType(Me.dgvStat1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvStat2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -96,21 +118,21 @@ Partial Class FrmDashboard
         '
         'Panel4
         '
-        Me.Panel4.Controls.Add(Me.Button11)
-        Me.Panel4.Controls.Add(Me.Button10)
-        Me.Panel4.Controls.Add(Me.Button9)
-        Me.Panel4.Controls.Add(Me.Button8)
-        Me.Panel4.Controls.Add(Me.Button7)
-        Me.Panel4.Controls.Add(Me.Panel10)
-        Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Controls.Add(Me.Panel9)
-        Me.Panel4.Controls.Add(Me.pnlsep)
-        Me.Panel4.Controls.Add(Me.Button6)
-        Me.Panel4.Controls.Add(Me.Button5)
-        Me.Panel4.Controls.Add(Me.Button4)
-        Me.Panel4.Controls.Add(Me.Button3)
-        Me.Panel4.Controls.Add(Me.Button2)
-        Me.Panel4.Controls.Add(Me.Button1)
+        Me.Panel4.Controls.Add(Me.btnPersonnel)
+        Me.Panel4.Controls.Add(Me.btnResiliation)
+        Me.Panel4.Controls.Add(Me.btnEtatdesLieux)
+        Me.Panel4.Controls.Add(Me.btnDécaissements)
+        Me.Panel4.Controls.Add(Me.btnBailleurs)
+        Me.Panel4.Controls.Add(Me.pnlinfo)
+        Me.Panel4.Controls.Add(Me.lblinfopconnect)
+        Me.Panel4.Controls.Add(Me.lblsep2)
+        Me.Panel4.Controls.Add(Me.pnlsep1)
+        Me.Panel4.Controls.Add(Me.btnDeconnexion)
+        Me.Panel4.Controls.Add(Me.btnNotification)
+        Me.Panel4.Controls.Add(Me.btnPaiements)
+        Me.Panel4.Controls.Add(Me.btnContrats)
+        Me.Panel4.Controls.Add(Me.btnLacataires)
+        Me.Panel4.Controls.Add(Me.btnBien)
         Me.Panel4.Controls.Add(Me.btnDashboard)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 63)
@@ -118,96 +140,96 @@ Partial Class FrmDashboard
         Me.Panel4.Size = New System.Drawing.Size(191, 605)
         Me.Panel4.TabIndex = 3
         '
-        'Button6
+        'btnDeconnexion
         '
-        Me.Button6.BackColor = System.Drawing.Color.Red
-        Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(0, 567)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(191, 38)
-        Me.Button6.TabIndex = 7
-        Me.Button6.Text = "Deconnexion ↪"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnDeconnexion.BackColor = System.Drawing.Color.Red
+        Me.btnDeconnexion.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDeconnexion.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnDeconnexion.FlatAppearance.BorderSize = 0
+        Me.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDeconnexion.ForeColor = System.Drawing.Color.White
+        Me.btnDeconnexion.Location = New System.Drawing.Point(0, 567)
+        Me.btnDeconnexion.Name = "btnDeconnexion"
+        Me.btnDeconnexion.Size = New System.Drawing.Size(191, 38)
+        Me.btnDeconnexion.TabIndex = 7
+        Me.btnDeconnexion.Text = "Deconnexion ↪"
+        Me.btnDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDeconnexion.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btnNotification
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(1, 259)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(191, 38)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Notification"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnNotification.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnNotification.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNotification.FlatAppearance.BorderSize = 0
+        Me.btnNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNotification.ForeColor = System.Drawing.Color.White
+        Me.btnNotification.Location = New System.Drawing.Point(1, 259)
+        Me.btnNotification.Name = "btnNotification"
+        Me.btnNotification.Size = New System.Drawing.Size(191, 38)
+        Me.btnNotification.TabIndex = 6
+        Me.btnNotification.Text = "Notification"
+        Me.btnNotification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnNotification.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnPaiements
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(0, 217)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(191, 38)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Paiements"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnPaiements.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnPaiements.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPaiements.FlatAppearance.BorderSize = 0
+        Me.btnPaiements.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPaiements.ForeColor = System.Drawing.Color.White
+        Me.btnPaiements.Location = New System.Drawing.Point(0, 217)
+        Me.btnPaiements.Name = "btnPaiements"
+        Me.btnPaiements.Size = New System.Drawing.Size(191, 38)
+        Me.btnPaiements.TabIndex = 5
+        Me.btnPaiements.Text = "Paiements"
+        Me.btnPaiements.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPaiements.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnContrats
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(-1, 176)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(191, 38)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Contrats"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnContrats.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnContrats.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnContrats.FlatAppearance.BorderSize = 0
+        Me.btnContrats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnContrats.ForeColor = System.Drawing.Color.White
+        Me.btnContrats.Location = New System.Drawing.Point(-1, 176)
+        Me.btnContrats.Name = "btnContrats"
+        Me.btnContrats.Size = New System.Drawing.Size(191, 38)
+        Me.btnContrats.TabIndex = 4
+        Me.btnContrats.Text = "Contrats"
+        Me.btnContrats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnContrats.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnLacataires
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(0, 135)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(191, 38)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Locataires"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnLacataires.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnLacataires.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLacataires.FlatAppearance.BorderSize = 0
+        Me.btnLacataires.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLacataires.ForeColor = System.Drawing.Color.White
+        Me.btnLacataires.Location = New System.Drawing.Point(0, 135)
+        Me.btnLacataires.Name = "btnLacataires"
+        Me.btnLacataires.Size = New System.Drawing.Size(191, 38)
+        Me.btnLacataires.TabIndex = 3
+        Me.btnLacataires.Text = "Locataires"
+        Me.btnLacataires.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLacataires.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnBien
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(0, 97)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(191, 38)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Bien"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnBien.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnBien.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBien.FlatAppearance.BorderSize = 0
+        Me.btnBien.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBien.ForeColor = System.Drawing.Color.White
+        Me.btnBien.Location = New System.Drawing.Point(0, 97)
+        Me.btnBien.Name = "btnBien"
+        Me.btnBien.Size = New System.Drawing.Size(191, 38)
+        Me.btnBien.TabIndex = 2
+        Me.btnBien.Text = "Bien"
+        Me.btnBien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBien.UseVisualStyleBackColor = False
         '
         'btnDashboard
         '
@@ -248,10 +270,10 @@ Partial Class FrmDashboard
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Panel11)
+        Me.Panel2.Controls.Add(Me.pnlgrille)
         Me.Panel2.Controls.Add(Me.pnlstat)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Controls.Add(Me.lbl3)
+        Me.Panel2.Controls.Add(Me.lbl2)
         Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(191, 0)
@@ -284,121 +306,129 @@ Partial Class FrmDashboard
         '
         'pnlstat
         '
-        Me.pnlstat.Controls.Add(Me.Panel8)
-        Me.pnlstat.Controls.Add(Me.Panel7)
-        Me.pnlstat.Controls.Add(Me.Panel6)
-        Me.pnlstat.Controls.Add(Me.Panel5)
+        Me.pnlstat.Controls.Add(Me.pnlstat4)
+        Me.pnlstat.Controls.Add(Me.pnlstat3)
+        Me.pnlstat.Controls.Add(Me.pnlstat2)
+        Me.pnlstat.Controls.Add(Me.pnlstat1)
         Me.pnlstat.Location = New System.Drawing.Point(21, 145)
         Me.pnlstat.Name = "pnlstat"
         Me.pnlstat.Size = New System.Drawing.Size(822, 162)
         Me.pnlstat.TabIndex = 3
         '
-        'Panel5
+        'pnlstat1
         '
-        Me.Panel5.BackColor = System.Drawing.Color.Gray
-        Me.Panel5.Controls.Add(Me.FlowLayoutPanel2)
-        Me.Panel5.Location = New System.Drawing.Point(36, 31)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(160, 100)
-        Me.Panel5.TabIndex = 0
+        Me.pnlstat1.BackColor = System.Drawing.Color.Gray
+        Me.pnlstat1.Controls.Add(Me.lblstat1)
+        Me.pnlstat1.Controls.Add(Me.lbl4)
+        Me.pnlstat1.Controls.Add(Me.FlowLayoutPanel2)
+        Me.pnlstat1.Location = New System.Drawing.Point(36, 31)
+        Me.pnlstat1.Name = "pnlstat1"
+        Me.pnlstat1.Size = New System.Drawing.Size(160, 100)
+        Me.pnlstat1.TabIndex = 0
         '
-        'Panel6
+        'pnlstat2
         '
-        Me.Panel6.BackColor = System.Drawing.Color.Gray
-        Me.Panel6.Controls.Add(Me.FlowLayoutPanel3)
-        Me.Panel6.Location = New System.Drawing.Point(232, 31)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(160, 100)
-        Me.Panel6.TabIndex = 1
+        Me.pnlstat2.BackColor = System.Drawing.Color.Gray
+        Me.pnlstat2.Controls.Add(Me.lblstat2)
+        Me.pnlstat2.Controls.Add(Me.lbl5)
+        Me.pnlstat2.Controls.Add(Me.FlowLayoutPanel3)
+        Me.pnlstat2.Location = New System.Drawing.Point(232, 31)
+        Me.pnlstat2.Name = "pnlstat2"
+        Me.pnlstat2.Size = New System.Drawing.Size(160, 100)
+        Me.pnlstat2.TabIndex = 1
         '
-        'Panel7
+        'pnlstat3
         '
-        Me.Panel7.BackColor = System.Drawing.Color.Gray
-        Me.Panel7.Controls.Add(Me.FlowLayoutPanel4)
-        Me.Panel7.Location = New System.Drawing.Point(428, 31)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(160, 100)
-        Me.Panel7.TabIndex = 1
+        Me.pnlstat3.BackColor = System.Drawing.Color.Gray
+        Me.pnlstat3.Controls.Add(Me.lblstat3)
+        Me.pnlstat3.Controls.Add(Me.lbl6)
+        Me.pnlstat3.Controls.Add(Me.FlowLayoutPanel4)
+        Me.pnlstat3.Location = New System.Drawing.Point(428, 31)
+        Me.pnlstat3.Name = "pnlstat3"
+        Me.pnlstat3.Size = New System.Drawing.Size(160, 100)
+        Me.pnlstat3.TabIndex = 1
         '
-        'Panel8
+        'pnlstat4
         '
-        Me.Panel8.BackColor = System.Drawing.Color.Gray
-        Me.Panel8.Controls.Add(Me.FlowLayoutPanel5)
-        Me.Panel8.Location = New System.Drawing.Point(624, 31)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(160, 100)
-        Me.Panel8.TabIndex = 1
+        Me.pnlstat4.BackColor = System.Drawing.Color.Gray
+        Me.pnlstat4.Controls.Add(Me.lblstat4)
+        Me.pnlstat4.Controls.Add(Me.lbl7)
+        Me.pnlstat4.Controls.Add(Me.FlowLayoutPanel5)
+        Me.pnlstat4.Location = New System.Drawing.Point(624, 31)
+        Me.pnlstat4.Name = "pnlstat4"
+        Me.pnlstat4.Size = New System.Drawing.Size(160, 100)
+        Me.pnlstat4.TabIndex = 1
         '
-        'pnlsep
+        'pnlsep1
         '
-        Me.pnlsep.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.pnlsep.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlsep.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.pnlsep.Location = New System.Drawing.Point(0, 0)
-        Me.pnlsep.Name = "pnlsep"
-        Me.pnlsep.Size = New System.Drawing.Size(191, 1)
-        Me.pnlsep.TabIndex = 7
+        Me.pnlsep1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlsep1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlsep1.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.pnlsep1.Location = New System.Drawing.Point(0, 0)
+        Me.pnlsep1.Name = "pnlsep1"
+        Me.pnlsep1.Size = New System.Drawing.Size(191, 1)
+        Me.pnlsep1.TabIndex = 7
         '
-        'Panel9
+        'lblsep2
         '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel9.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Panel9.Location = New System.Drawing.Point(0, 51)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(191, 1)
-        Me.Panel9.TabIndex = 8
+        Me.lblsep2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblsep2.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.lblsep2.Location = New System.Drawing.Point(0, 51)
+        Me.lblsep2.Name = "lblsep2"
+        Me.lblsep2.Size = New System.Drawing.Size(191, 1)
+        Me.lblsep2.TabIndex = 8
         '
-        'Panel10
+        'pnlinfo
         '
-        Me.Panel10.BackColor = System.Drawing.Color.Gray
-        Me.Panel10.Controls.Add(Me.Label3)
-        Me.Panel10.Location = New System.Drawing.Point(3, 6)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(40, 38)
-        Me.Panel10.TabIndex = 9
+        Me.pnlinfo.BackColor = System.Drawing.Color.Gray
+        Me.pnlinfo.Controls.Add(Me.lblinfodimunitif)
+        Me.pnlinfo.Location = New System.Drawing.Point(3, 6)
+        Me.pnlinfo.Name = "pnlinfo"
+        Me.pnlinfo.Size = New System.Drawing.Size(40, 38)
+        Me.pnlinfo.TabIndex = 9
         '
-        'Label3
+        'lblinfodimunitif
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(6, 10)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(27, 16)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "DG"
+        Me.lblinfodimunitif.AutoSize = True
+        Me.lblinfodimunitif.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblinfodimunitif.ForeColor = System.Drawing.Color.White
+        Me.lblinfodimunitif.Location = New System.Drawing.Point(6, 10)
+        Me.lblinfodimunitif.Name = "lblinfodimunitif"
+        Me.lblinfodimunitif.Size = New System.Drawing.Size(27, 16)
+        Me.lblinfodimunitif.TabIndex = 10
+        Me.lblinfodimunitif.Text = "DG"
         '
-        'Label4
+        'lblinfopconnect
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(51, 17)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(109, 13)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Directeur Général"
+        Me.lblinfopconnect.AutoSize = True
+        Me.lblinfopconnect.ForeColor = System.Drawing.Color.White
+        Me.lblinfopconnect.Location = New System.Drawing.Point(51, 17)
+        Me.lblinfopconnect.Name = "lblinfopconnect"
+        Me.lblinfopconnect.Size = New System.Drawing.Size(109, 13)
+        Me.lblinfopconnect.TabIndex = 10
+        Me.lblinfopconnect.Text = "Directeur Général"
         '
-        'Label1
+        'lbl2
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(55, 82)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(124, 18)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Bienvenue 👋🏾"
+        Me.lbl2.AutoSize = True
+        Me.lbl2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl2.ForeColor = System.Drawing.Color.White
+        Me.lbl2.Location = New System.Drawing.Point(55, 82)
+        Me.lbl2.Name = "lbl2"
+        Me.lbl2.Size = New System.Drawing.Size(124, 18)
+        Me.lbl2.TabIndex = 1
+        Me.lbl2.Text = "Bienvenue 👋🏾"
         '
-        'Label2
+        'lbl3
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(55, 107)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(231, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Voici le résumé de l'agence aujourd'hui"
+        Me.lbl3.AutoSize = True
+        Me.lbl3.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl3.ForeColor = System.Drawing.Color.White
+        Me.lbl3.Location = New System.Drawing.Point(55, 107)
+        Me.lbl3.Name = "lbl3"
+        Me.lbl3.Size = New System.Drawing.Size(231, 13)
+        Me.lbl3.TabIndex = 2
+        Me.lbl3.Text = "Voici le résumé de l'agence aujourd'hui"
         '
         'FlowLayoutPanel2
         '
@@ -436,149 +466,319 @@ Partial Class FrmDashboard
         Me.FlowLayoutPanel5.Size = New System.Drawing.Size(160, 6)
         Me.FlowLayoutPanel5.TabIndex = 14
         '
-        'Panel11
+        'pnlgrille
         '
-        Me.Panel11.Controls.Add(Me.Panel13)
-        Me.Panel11.Controls.Add(Me.Panel12)
-        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel11.Location = New System.Drawing.Point(0, 373)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(864, 295)
-        Me.Panel11.TabIndex = 4
+        Me.pnlgrille.Controls.Add(Me.pnlinfog2)
+        Me.pnlgrille.Controls.Add(Me.pnlinfog1)
+        Me.pnlgrille.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnlgrille.Location = New System.Drawing.Point(0, 373)
+        Me.pnlgrille.Name = "pnlgrille"
+        Me.pnlgrille.Size = New System.Drawing.Size(864, 295)
+        Me.pnlgrille.TabIndex = 4
         '
-        'Panel12
+        'pnlinfog1
         '
-        Me.Panel12.BackColor = System.Drawing.Color.Gray
-        Me.Panel12.Controls.Add(Me.DataGridView1)
-        Me.Panel12.Controls.Add(Me.Label5)
-        Me.Panel12.ForeColor = System.Drawing.Color.White
-        Me.Panel12.Location = New System.Drawing.Point(57, 3)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(356, 280)
-        Me.Panel12.TabIndex = 0
+        Me.pnlinfog1.BackColor = System.Drawing.Color.Gray
+        Me.pnlinfog1.Controls.Add(Me.dgvStat1)
+        Me.pnlinfog1.Controls.Add(Me.lbl8)
+        Me.pnlinfog1.ForeColor = System.Drawing.Color.White
+        Me.pnlinfog1.Location = New System.Drawing.Point(57, 3)
+        Me.pnlinfog1.Name = "pnlinfog1"
+        Me.pnlinfog1.Size = New System.Drawing.Size(356, 280)
+        Me.pnlinfog1.TabIndex = 0
         '
-        'Panel13
+        'pnlinfog2
         '
-        Me.Panel13.BackColor = System.Drawing.Color.Gray
-        Me.Panel13.Controls.Add(Me.DataGridView2)
-        Me.Panel13.Controls.Add(Me.Label6)
-        Me.Panel13.Location = New System.Drawing.Point(449, 3)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(356, 280)
-        Me.Panel13.TabIndex = 1
+        Me.pnlinfog2.BackColor = System.Drawing.Color.Gray
+        Me.pnlinfog2.Controls.Add(Me.dgvStat2)
+        Me.pnlinfog2.Controls.Add(Me.lbl9)
+        Me.pnlinfog2.Location = New System.Drawing.Point(449, 3)
+        Me.pnlinfog2.Name = "pnlinfog2"
+        Me.pnlinfog2.Size = New System.Drawing.Size(365, 280)
+        Me.pnlinfog2.TabIndex = 1
         '
-        'Label5
+        'lbl8
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(3, 12)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(128, 13)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Paiements récents"
+        Me.lbl8.AutoSize = True
+        Me.lbl8.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl8.ForeColor = System.Drawing.Color.White
+        Me.lbl8.Location = New System.Drawing.Point(3, 12)
+        Me.lbl8.Name = "lbl8"
+        Me.lbl8.Size = New System.Drawing.Size(128, 13)
+        Me.lbl8.TabIndex = 2
+        Me.lbl8.Text = "Paiements récents"
         '
-        'DataGridView1
+        'dgvStat1
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(5, 28)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(347, 249)
-        Me.DataGridView1.TabIndex = 3
+        Me.dgvStat1.AllowUserToAddRows = False
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgvStat1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvStat1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvStat1.BackgroundColor = System.Drawing.Color.Gray
+        Me.dgvStat1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvStat1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvStat1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.clLocataire, Me.clMontant, Me.clMode, Me.clDate, Me.clStatut})
+        Me.dgvStat1.GridColor = System.Drawing.Color.LightGray
+        Me.dgvStat1.Location = New System.Drawing.Point(5, 28)
+        Me.dgvStat1.Name = "dgvStat1"
+        Me.dgvStat1.ReadOnly = True
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvStat1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Azure
+        Me.dgvStat1.RowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvStat1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvStat1.Size = New System.Drawing.Size(347, 249)
+        Me.dgvStat1.TabIndex = 3
         '
-        'Label6
+        'lbl9
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(3, 12)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(120, 13)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Biens disponibles"
+        Me.lbl9.AutoSize = True
+        Me.lbl9.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl9.ForeColor = System.Drawing.Color.White
+        Me.lbl9.Location = New System.Drawing.Point(3, 12)
+        Me.lbl9.Name = "lbl9"
+        Me.lbl9.Size = New System.Drawing.Size(120, 13)
+        Me.lbl9.TabIndex = 3
+        Me.lbl9.Text = "Biens disponibles"
         '
-        'DataGridView2
+        'dgvStat2
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(5, 28)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(347, 249)
-        Me.DataGridView2.TabIndex = 4
+        Me.dgvStat2.AllowUserToAddRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgvStat2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvStat2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvStat2.BackgroundColor = System.Drawing.Color.Gray
+        Me.dgvStat2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvStat2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvStat2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.clAdresse, Me.clType, Me.clLoyer, Me.clQuartier})
+        Me.dgvStat2.GridColor = System.Drawing.Color.LightGray
+        Me.dgvStat2.Location = New System.Drawing.Point(5, 28)
+        Me.dgvStat2.Name = "dgvStat2"
+        Me.dgvStat2.ReadOnly = True
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Azure
+        Me.dgvStat2.RowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvStat2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvStat2.Size = New System.Drawing.Size(351, 249)
+        Me.dgvStat2.TabIndex = 4
         '
-        'Button7
+        'btnBailleurs
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(0, 303)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(191, 38)
-        Me.Button7.TabIndex = 11
-        Me.Button7.Text = "Bailleurs"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.btnBailleurs.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnBailleurs.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBailleurs.FlatAppearance.BorderSize = 0
+        Me.btnBailleurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBailleurs.ForeColor = System.Drawing.Color.White
+        Me.btnBailleurs.Location = New System.Drawing.Point(0, 303)
+        Me.btnBailleurs.Name = "btnBailleurs"
+        Me.btnBailleurs.Size = New System.Drawing.Size(191, 38)
+        Me.btnBailleurs.TabIndex = 11
+        Me.btnBailleurs.Text = "Bailleurs"
+        Me.btnBailleurs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBailleurs.UseVisualStyleBackColor = False
         '
-        'Button8
+        'btnDécaissements
         '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Location = New System.Drawing.Point(0, 347)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(191, 38)
-        Me.Button8.TabIndex = 12
-        Me.Button8.Text = "Décaissements"
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.btnDécaissements.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnDécaissements.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDécaissements.FlatAppearance.BorderSize = 0
+        Me.btnDécaissements.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDécaissements.ForeColor = System.Drawing.Color.White
+        Me.btnDécaissements.Location = New System.Drawing.Point(0, 347)
+        Me.btnDécaissements.Name = "btnDécaissements"
+        Me.btnDécaissements.Size = New System.Drawing.Size(191, 38)
+        Me.btnDécaissements.TabIndex = 12
+        Me.btnDécaissements.Text = "Décaissements"
+        Me.btnDécaissements.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDécaissements.UseVisualStyleBackColor = False
         '
-        'Button9
+        'btnEtatdesLieux
         '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.ForeColor = System.Drawing.Color.White
-        Me.Button9.Location = New System.Drawing.Point(-3, 391)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(191, 38)
-        Me.Button9.TabIndex = 13
-        Me.Button9.Text = "États des lieux"
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.btnEtatdesLieux.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnEtatdesLieux.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEtatdesLieux.FlatAppearance.BorderSize = 0
+        Me.btnEtatdesLieux.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEtatdesLieux.ForeColor = System.Drawing.Color.White
+        Me.btnEtatdesLieux.Location = New System.Drawing.Point(-3, 391)
+        Me.btnEtatdesLieux.Name = "btnEtatdesLieux"
+        Me.btnEtatdesLieux.Size = New System.Drawing.Size(191, 38)
+        Me.btnEtatdesLieux.TabIndex = 13
+        Me.btnEtatdesLieux.Text = "États des lieux"
+        Me.btnEtatdesLieux.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnEtatdesLieux.UseVisualStyleBackColor = False
         '
-        'Button10
+        'btnResiliation
         '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ForeColor = System.Drawing.Color.White
-        Me.Button10.Location = New System.Drawing.Point(0, 435)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(191, 38)
-        Me.Button10.TabIndex = 14
-        Me.Button10.Text = "Résiliations"
-        Me.Button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button10.UseVisualStyleBackColor = False
+        Me.btnResiliation.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnResiliation.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnResiliation.FlatAppearance.BorderSize = 0
+        Me.btnResiliation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnResiliation.ForeColor = System.Drawing.Color.White
+        Me.btnResiliation.Location = New System.Drawing.Point(0, 435)
+        Me.btnResiliation.Name = "btnResiliation"
+        Me.btnResiliation.Size = New System.Drawing.Size(191, 38)
+        Me.btnResiliation.TabIndex = 14
+        Me.btnResiliation.Text = "Résiliations"
+        Me.btnResiliation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnResiliation.UseVisualStyleBackColor = False
         '
-        'Button11
+        'btnPersonnel
         '
-        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.ForeColor = System.Drawing.Color.White
-        Me.Button11.Location = New System.Drawing.Point(0, 479)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(191, 38)
-        Me.Button11.TabIndex = 15
-        Me.Button11.Text = "Personnel"
-        Me.Button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button11.UseVisualStyleBackColor = False
+        Me.btnPersonnel.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnPersonnel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPersonnel.FlatAppearance.BorderSize = 0
+        Me.btnPersonnel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPersonnel.ForeColor = System.Drawing.Color.White
+        Me.btnPersonnel.Location = New System.Drawing.Point(0, 479)
+        Me.btnPersonnel.Name = "btnPersonnel"
+        Me.btnPersonnel.Size = New System.Drawing.Size(191, 38)
+        Me.btnPersonnel.TabIndex = 15
+        Me.btnPersonnel.Text = "Personnel"
+        Me.btnPersonnel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPersonnel.UseVisualStyleBackColor = False
+        '
+        'clLocataire
+        '
+        Me.clLocataire.HeaderText = "Locataire"
+        Me.clLocataire.Name = "clLocataire"
+        Me.clLocataire.ReadOnly = True
+        '
+        'clMontant
+        '
+        Me.clMontant.HeaderText = "Montant"
+        Me.clMontant.Name = "clMontant"
+        Me.clMontant.ReadOnly = True
+        '
+        'clMode
+        '
+        Me.clMode.HeaderText = "Mode"
+        Me.clMode.Name = "clMode"
+        Me.clMode.ReadOnly = True
+        '
+        'clDate
+        '
+        Me.clDate.HeaderText = "Date"
+        Me.clDate.Name = "clDate"
+        Me.clDate.ReadOnly = True
+        '
+        'clStatut
+        '
+        Me.clStatut.HeaderText = "Statut"
+        Me.clStatut.Name = "clStatut"
+        Me.clStatut.ReadOnly = True
+        '
+        'clAdresse
+        '
+        Me.clAdresse.HeaderText = "Adresse"
+        Me.clAdresse.Name = "clAdresse"
+        Me.clAdresse.ReadOnly = True
+        '
+        'clType
+        '
+        Me.clType.HeaderText = "Type"
+        Me.clType.Name = "clType"
+        Me.clType.ReadOnly = True
+        '
+        'clLoyer
+        '
+        Me.clLoyer.HeaderText = "Loyer"
+        Me.clLoyer.Name = "clLoyer"
+        Me.clLoyer.ReadOnly = True
+        '
+        'clQuartier
+        '
+        Me.clQuartier.HeaderText = "Quartier"
+        Me.clQuartier.Name = "clQuartier"
+        Me.clQuartier.ReadOnly = True
+        '
+        'lbl4
+        '
+        Me.lbl4.AutoSize = True
+        Me.lbl4.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl4.ForeColor = System.Drawing.Color.White
+        Me.lbl4.Location = New System.Drawing.Point(3, 9)
+        Me.lbl4.Name = "lbl4"
+        Me.lbl4.Size = New System.Drawing.Size(75, 13)
+        Me.lbl4.TabIndex = 14
+        Me.lbl4.Text = "Locataires"
+        '
+        'lbl5
+        '
+        Me.lbl5.AutoSize = True
+        Me.lbl5.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl5.ForeColor = System.Drawing.Color.White
+        Me.lbl5.Location = New System.Drawing.Point(3, 9)
+        Me.lbl5.Name = "lbl5"
+        Me.lbl5.Size = New System.Drawing.Size(83, 13)
+        Me.lbl5.TabIndex = 15
+        Me.lbl5.Text = "Biens libres"
+        '
+        'lbl6
+        '
+        Me.lbl6.AutoSize = True
+        Me.lbl6.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl6.ForeColor = System.Drawing.Color.White
+        Me.lbl6.Location = New System.Drawing.Point(3, 9)
+        Me.lbl6.Name = "lbl6"
+        Me.lbl6.Size = New System.Drawing.Size(102, 13)
+        Me.lbl6.TabIndex = 15
+        Me.lbl6.Text = "Contrats actifs"
+        '
+        'lbl7
+        '
+        Me.lbl7.AutoSize = True
+        Me.lbl7.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl7.ForeColor = System.Drawing.Color.White
+        Me.lbl7.Location = New System.Drawing.Point(3, 9)
+        Me.lbl7.Name = "lbl7"
+        Me.lbl7.Size = New System.Drawing.Size(130, 13)
+        Me.lbl7.TabIndex = 15
+        Me.lbl7.Text = "Paiements du mois"
+        '
+        'lblstat1
+        '
+        Me.lblstat1.Font = New System.Drawing.Font("Verdana", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstat1.Location = New System.Drawing.Point(50, 40)
+        Me.lblstat1.Name = "lblstat1"
+        Me.lblstat1.Size = New System.Drawing.Size(51, 44)
+        Me.lblstat1.TabIndex = 15
+        Me.lblstat1.Text = "0"
+        Me.lblstat1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblstat2
+        '
+        Me.lblstat2.Font = New System.Drawing.Font("Verdana", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstat2.Location = New System.Drawing.Point(50, 40)
+        Me.lblstat2.Name = "lblstat2"
+        Me.lblstat2.Size = New System.Drawing.Size(51, 44)
+        Me.lblstat2.TabIndex = 16
+        Me.lblstat2.Text = "0"
+        Me.lblstat2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblstat3
+        '
+        Me.lblstat3.Font = New System.Drawing.Font("Verdana", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstat3.Location = New System.Drawing.Point(50, 40)
+        Me.lblstat3.Name = "lblstat3"
+        Me.lblstat3.Size = New System.Drawing.Size(51, 44)
+        Me.lblstat3.TabIndex = 16
+        Me.lblstat3.Text = "0"
+        Me.lblstat3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblstat4
+        '
+        Me.lblstat4.Font = New System.Drawing.Font("Verdana", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstat4.Location = New System.Drawing.Point(50, 40)
+        Me.lblstat4.Name = "lblstat4"
+        Me.lblstat4.Size = New System.Drawing.Size(51, 44)
+        Me.lblstat4.TabIndex = 16
+        Me.lblstat4.Text = "0"
+        Me.lblstat4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmDashboard
         '
@@ -591,7 +791,8 @@ Partial Class FrmDashboard
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(1071, 647)
+        Me.MaximumSize = New System.Drawing.Size(1071, 707)
+        Me.MinimumSize = New System.Drawing.Size(1071, 707)
         Me.Name = "FrmDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lokatoo - Tableau de bord"
@@ -605,19 +806,23 @@ Partial Class FrmDashboard
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.pnlstat.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel10.PerformLayout()
-        Me.Panel11.ResumeLayout(False)
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel12.PerformLayout()
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel13.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlstat1.ResumeLayout(False)
+        Me.pnlstat1.PerformLayout()
+        Me.pnlstat2.ResumeLayout(False)
+        Me.pnlstat2.PerformLayout()
+        Me.pnlstat3.ResumeLayout(False)
+        Me.pnlstat3.PerformLayout()
+        Me.pnlstat4.ResumeLayout(False)
+        Me.pnlstat4.PerformLayout()
+        Me.pnlinfo.ResumeLayout(False)
+        Me.pnlinfo.PerformLayout()
+        Me.pnlgrille.ResumeLayout(False)
+        Me.pnlinfog1.ResumeLayout(False)
+        Me.pnlinfog1.PerformLayout()
+        Me.pnlinfog2.ResumeLayout(False)
+        Me.pnlinfog2.PerformLayout()
+        CType(Me.dgvStat1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvStat2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -630,38 +835,55 @@ Partial Class FrmDashboard
     Friend WithEvents btnDashboard As Button
     Friend WithEvents pnltitre As Panel
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnPaiements As Button
+    Friend WithEvents btnContrats As Button
+    Friend WithEvents btnLacataires As Button
+    Friend WithEvents btnBien As Button
+    Friend WithEvents btnDeconnexion As Button
+    Friend WithEvents btnNotification As Button
     Friend WithEvents pnlstat As Panel
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents pnlsep As Panel
-    Friend WithEvents Panel10 As Panel
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents pnlstat3 As Panel
+    Friend WithEvents pnlstat2 As Panel
+    Friend WithEvents pnlstat1 As Panel
+    Friend WithEvents pnlstat4 As Panel
+    Friend WithEvents lblsep2 As Panel
+    Friend WithEvents pnlsep1 As Panel
+    Friend WithEvents pnlinfo As Panel
+    Friend WithEvents lblinfopconnect As Label
+    Friend WithEvents lblinfodimunitif As Label
+    Friend WithEvents lbl3 As Label
+    Friend WithEvents lbl2 As Label
     Friend WithEvents FlowLayoutPanel4 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel3 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel5 As FlowLayoutPanel
-    Friend WithEvents Panel12 As Panel
-    Friend WithEvents Panel11 As Panel
-    Friend WithEvents Panel13 As Panel
-    Friend WithEvents Label5 As Label
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button11 As Button
+    Friend WithEvents pnlinfog1 As Panel
+    Friend WithEvents pnlgrille As Panel
+    Friend WithEvents pnlinfog2 As Panel
+    Friend WithEvents lbl8 As Label
+    Friend WithEvents dgvStat1 As DataGridView
+    Friend WithEvents dgvStat2 As DataGridView
+    Friend WithEvents lbl9 As Label
+    Friend WithEvents btnResiliation As Button
+    Friend WithEvents btnEtatdesLieux As Button
+    Friend WithEvents btnDécaissements As Button
+    Friend WithEvents btnBailleurs As Button
+    Friend WithEvents btnPersonnel As Button
+    Friend WithEvents clLocataire As DataGridViewTextBoxColumn
+    Friend WithEvents clMontant As DataGridViewTextBoxColumn
+    Friend WithEvents clMode As DataGridViewTextBoxColumn
+    Friend WithEvents clDate As DataGridViewTextBoxColumn
+    Friend WithEvents clStatut As DataGridViewTextBoxColumn
+    Friend WithEvents clAdresse As DataGridViewTextBoxColumn
+    Friend WithEvents clType As DataGridViewTextBoxColumn
+    Friend WithEvents clLoyer As DataGridViewTextBoxColumn
+    Friend WithEvents clQuartier As DataGridViewTextBoxColumn
+    Friend WithEvents lbl4 As Label
+    Friend WithEvents lbl7 As Label
+    Friend WithEvents lbl6 As Label
+    Friend WithEvents lbl5 As Label
+    Friend WithEvents lblstat1 As Label
+    Friend WithEvents lblstat2 As Label
+    Friend WithEvents lblstat4 As Label
+    Friend WithEvents lblstat3 As Label
 End Class
