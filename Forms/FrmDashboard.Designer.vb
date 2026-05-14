@@ -46,13 +46,19 @@ Partial Class FrmDashboard
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.FlowLayoutPanel3 = New System.Windows.Forms.FlowLayoutPanel()
         Me.FlowLayoutPanel4 = New System.Windows.Forms.FlowLayoutPanel()
         Me.FlowLayoutPanel5 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.pnltitre.SuspendLayout()
@@ -64,6 +70,11 @@ Partial Class FrmDashboard
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel10.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -99,7 +110,8 @@ Partial Class FrmDashboard
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.Gray
+        Me.Button6.BackColor = System.Drawing.Color.Red
+        Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button6.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -108,13 +120,14 @@ Partial Class FrmDashboard
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(191, 38)
         Me.Button6.TabIndex = 7
-        Me.Button6.Text = "Deconnexion"
+        Me.Button6.Text = "Deconnexion ↪"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button6.UseVisualStyleBackColor = False
         '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.ForeColor = System.Drawing.Color.White
@@ -129,6 +142,7 @@ Partial Class FrmDashboard
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.ForeColor = System.Drawing.Color.White
@@ -143,6 +157,7 @@ Partial Class FrmDashboard
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.White
@@ -157,6 +172,7 @@ Partial Class FrmDashboard
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.White
@@ -171,6 +187,7 @@ Partial Class FrmDashboard
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
@@ -185,6 +202,7 @@ Partial Class FrmDashboard
         'btnDashboard
         '
         Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnDashboard.FlatAppearance.BorderSize = 0
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDashboard.ForeColor = System.Drawing.Color.White
@@ -220,8 +238,8 @@ Partial Class FrmDashboard
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Panel11)
         Me.Panel2.Controls.Add(Me.pnlstat)
-        Me.Panel2.Controls.Add(Me.FlowLayoutPanel1)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.Panel3)
@@ -240,7 +258,7 @@ Partial Class FrmDashboard
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(864, 56)
+        Me.Panel3.Size = New System.Drawing.Size(864, 69)
         Me.Panel3.TabIndex = 0
         '
         'lbl1
@@ -269,7 +287,7 @@ Partial Class FrmDashboard
         '
         Me.Panel5.BackColor = System.Drawing.Color.Gray
         Me.Panel5.Controls.Add(Me.FlowLayoutPanel2)
-        Me.Panel5.Location = New System.Drawing.Point(18, 29)
+        Me.Panel5.Location = New System.Drawing.Point(36, 31)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(160, 100)
         Me.Panel5.TabIndex = 0
@@ -278,7 +296,7 @@ Partial Class FrmDashboard
         '
         Me.Panel6.BackColor = System.Drawing.Color.Gray
         Me.Panel6.Controls.Add(Me.FlowLayoutPanel3)
-        Me.Panel6.Location = New System.Drawing.Point(232, 29)
+        Me.Panel6.Location = New System.Drawing.Point(232, 31)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(160, 100)
         Me.Panel6.TabIndex = 1
@@ -287,7 +305,7 @@ Partial Class FrmDashboard
         '
         Me.Panel7.BackColor = System.Drawing.Color.Gray
         Me.Panel7.Controls.Add(Me.FlowLayoutPanel4)
-        Me.Panel7.Location = New System.Drawing.Point(445, 29)
+        Me.Panel7.Location = New System.Drawing.Point(428, 31)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(160, 100)
         Me.Panel7.TabIndex = 1
@@ -296,7 +314,7 @@ Partial Class FrmDashboard
         '
         Me.Panel8.BackColor = System.Drawing.Color.Gray
         Me.Panel8.Controls.Add(Me.FlowLayoutPanel5)
-        Me.Panel8.Location = New System.Drawing.Point(647, 29)
+        Me.Panel8.Location = New System.Drawing.Point(624, 31)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(160, 100)
         Me.Panel8.TabIndex = 1
@@ -350,19 +368,12 @@ Partial Class FrmDashboard
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Directeur Général"
         '
-        'FlowLayoutPanel1
-        '
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(21, 313)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(392, 283)
-        Me.FlowLayoutPanel1.TabIndex = 11
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(18, 82)
+        Me.Label1.Location = New System.Drawing.Point(55, 82)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(124, 18)
         Me.Label1.TabIndex = 1
@@ -373,7 +384,7 @@ Partial Class FrmDashboard
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(18, 107)
+        Me.Label2.Location = New System.Drawing.Point(55, 107)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(231, 13)
         Me.Label2.TabIndex = 2
@@ -381,7 +392,7 @@ Partial Class FrmDashboard
         '
         'FlowLayoutPanel2
         '
-        Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
@@ -390,7 +401,7 @@ Partial Class FrmDashboard
         '
         'FlowLayoutPanel3
         '
-        Me.FlowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.FlowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.FlowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.FlowLayoutPanel3.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
@@ -399,7 +410,7 @@ Partial Class FrmDashboard
         '
         'FlowLayoutPanel4
         '
-        Me.FlowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.FlowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.FlowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.FlowLayoutPanel4.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel4.Name = "FlowLayoutPanel4"
@@ -408,12 +419,81 @@ Partial Class FrmDashboard
         '
         'FlowLayoutPanel5
         '
-        Me.FlowLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.FlowLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.FlowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.FlowLayoutPanel5.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel5.Name = "FlowLayoutPanel5"
         Me.FlowLayoutPanel5.Size = New System.Drawing.Size(160, 6)
         Me.FlowLayoutPanel5.TabIndex = 14
+        '
+        'Panel11
+        '
+        Me.Panel11.Controls.Add(Me.Panel13)
+        Me.Panel11.Controls.Add(Me.Panel12)
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel11.Location = New System.Drawing.Point(0, 313)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(864, 295)
+        Me.Panel11.TabIndex = 4
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.Gray
+        Me.Panel12.Controls.Add(Me.DataGridView1)
+        Me.Panel12.Controls.Add(Me.Label5)
+        Me.Panel12.ForeColor = System.Drawing.Color.White
+        Me.Panel12.Location = New System.Drawing.Point(57, 3)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(356, 280)
+        Me.Panel12.TabIndex = 0
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.Gray
+        Me.Panel13.Controls.Add(Me.DataGridView2)
+        Me.Panel13.Controls.Add(Me.Label6)
+        Me.Panel13.Location = New System.Drawing.Point(449, 3)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(356, 280)
+        Me.Panel13.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(3, 12)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(128, 13)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Paiements récents"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(5, 28)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(347, 249)
+        Me.DataGridView1.TabIndex = 3
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(3, 12)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(120, 13)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "Biens disponibles"
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(5, 28)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(347, 249)
+        Me.DataGridView2.TabIndex = 4
         '
         'FrmDashboard
         '
@@ -423,7 +503,11 @@ Partial Class FrmDashboard
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(1071, 647)
+        Me.MinimumSize = New System.Drawing.Size(1071, 647)
         Me.Name = "FrmDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lokatoo - Tableau de bord"
@@ -443,6 +527,13 @@ Partial Class FrmDashboard
         Me.Panel8.ResumeLayout(False)
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel13.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -471,11 +562,17 @@ Partial Class FrmDashboard
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents FlowLayoutPanel4 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel3 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel5 As FlowLayoutPanel
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents Label6 As Label
 End Class

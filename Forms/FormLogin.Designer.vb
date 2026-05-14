@@ -91,6 +91,7 @@ Partial Class FrmLogin
         'pnlsep
         '
         Me.pnlsep.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlsep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlsep.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.pnlsep.Location = New System.Drawing.Point(12, 97)
         Me.pnlsep.Name = "pnlsep"
@@ -225,12 +226,13 @@ Partial Class FrmLogin
         'btnSeconnecter
         '
         Me.btnSeconnecter.BackColor = System.Drawing.Color.Gray
+        Me.btnSeconnecter.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSeconnecter.FlatAppearance.BorderSize = 0
         Me.btnSeconnecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSeconnecter.ForeColor = System.Drawing.Color.White
         Me.btnSeconnecter.Location = New System.Drawing.Point(47, 353)
         Me.btnSeconnecter.Name = "btnSeconnecter"
-        Me.btnSeconnecter.Size = New System.Drawing.Size(361, 23)
+        Me.btnSeconnecter.Size = New System.Drawing.Size(361, 38)
         Me.btnSeconnecter.TabIndex = 9
         Me.btnSeconnecter.Text = "Se connecter"
         Me.btnSeconnecter.UseVisualStyleBackColor = False
@@ -293,6 +295,7 @@ Partial Class FrmLogin
         Me.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lokatoo - Connexion"
