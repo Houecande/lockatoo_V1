@@ -797,9 +797,9 @@ Partial Class FrmDashboard
         Me.lbl1.ForeColor = System.Drawing.Color.White
         Me.lbl1.Location = New System.Drawing.Point(18, 20)
         Me.lbl1.Name = "lbl1"
-        Me.lbl1.Size = New System.Drawing.Size(163, 18)
+        Me.lbl1.Size = New System.Drawing.Size(152, 18)
         Me.lbl1.TabIndex = 0
-        Me.lbl1.Text = "Tableau de board"
+        Me.lbl1.Text = "Tableau de bord"
         '
         'FrmDashboard
         '
