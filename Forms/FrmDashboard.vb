@@ -209,6 +209,21 @@ Public Class FrmDashboard
 
     Private Sub btnLocataires_Click(sender As Object, e As EventArgs) Handles btnLocataires.Click
         SetBtnActif(btnLocataires)
+
+        ' Créer l'instance du formulaire
+        Dim frm As New FrmLocataires()
+
+        ' Configuration pour l'afficher à l'intérieur du Dashboard (Panel central)
+        frm.TopLevel = False
+        frm.FormBorderStyle = FormBorderStyle.None
+        frm.Dock = DockStyle.Fill
+
+        ' Supprimer ce qu'il y a déjà dans votre panel d'affichage (souvent nommé pnlContent ou pnlMain)
+        ' Remplacez "pnlMain" par le nom réel de votre Panel central
+        Panel2.Controls.Clear()
+        Panel2.Controls.Add(frm)
+
+        frm.Show()
     End Sub
 
     Private Sub btnContrats_Click(sender As Object, e As EventArgs) Handles btnContrats.Click

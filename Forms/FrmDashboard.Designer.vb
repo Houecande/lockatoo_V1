@@ -414,7 +414,7 @@ Partial Class FrmDashboard
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel2.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Panel2.Controls.Add(Me.pnlgrille)
         Me.Panel2.Controls.Add(Me.pnlstat)
         Me.Panel2.Controls.Add(Me.lbl3)
@@ -781,7 +781,7 @@ Partial Class FrmDashboard
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel3.Controls.Add(Me.lbl1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
@@ -812,8 +812,8 @@ Partial Class FrmDashboard
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(1071, 707)
+        Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(1071, 707)
         Me.Name = "FrmDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
